@@ -1,0 +1,1852 @@
+:root {
+  --bg: #04060b;
+  --panel: rgba(10, 14, 22, 0.72);
+  --ink: #e9edf5;
+  --muted: #8593a8;
+  --line: rgba(140, 175, 220, 0.16);
+  --cyan: #4fd8ff;
+  --violet: #a06bff;
+  --amber: #ffab40;
+
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ---------- canvas ---------- */
+
+.stage {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  /* The stage is the input surface for wheel, drag and pinch. Declaring the
+     gestures we handle stops the browser claiming them first — without this,
+     a horizontal drag triggers back-navigation on trackpads and a vertical one
+     scroll-chains to the document. */
+  touch-action: none;
+  cursor: grab;
+}
+
+.stage:active {
+  cursor: grabbing;
+}
+
+/* On the syllabus the canvas is only a backdrop: it must not intercept the
+   pointer, or the lecture list underneath it cannot be clicked or scrolled. */
+.stage[data-view='syllabus'] {
+  pointer-events: none;
+  cursor: default;
+  touch-action: auto;
+}
+
+.stage::after {
+  /* Sits between the canvas and the copy so text never fights a bright lid.
+     The linear pass is a reading scrim behind the left-hand column; the radial
+     pass keeps the frame edges dark. */
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      100deg,
+      rgba(4, 6, 11, 0.94) 0%,
+      rgba(4, 6, 11, 0.82) 26%,
+      rgba(4, 6, 11, 0.15) 52%,
+      transparent 68%
+    ),
+    radial-gradient(120% 90% at 62% 45%, transparent 30%, rgba(4, 6, 11, 0.6) 100%);
+}
+
+@media (max-width: 820px) {
+  .stage::after {
+    background: linear-gradient(
+      0deg,
+      rgba(4, 6, 11, 0.95) 0%,
+      rgba(4, 6, 11, 0.7) 34%,
+      transparent 62%
+    );
+  }
+}
+
+/* ---------- story ---------- */
+
+/* The copy layer no longer scrolls: it is a single fixed panel over the canvas
+   holding whichever beat the deck is on. It must not eat pointer events, or it
+   would swallow every drag aimed at the model behind it. */
+.story {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 clamp(1.5rem, 6vw, 7rem);
+  pointer-events: none;
+}
+
+.story a,
+.story button {
+  pointer-events: auto;
+}
+
+.beats {
+  position: relative;
+  width: min(30rem, 100%);
+}
+
+/* Stepping remounts the card, so the entrance is an animation rather than a
+   transition between two states. */
+.beat {
+  animation: beat-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes beat-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.beat__card {
+  background: var(--panel);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.beat__kicker {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.beat__kicker::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.beat__heading {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  margin: 0 0 1.1rem;
+}
+
+.beat__body {
+  margin: 0 0 0.9rem;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #c3ccdb;
+}
+
+.beat__body:last-child {
+  margin-bottom: 0;
+}
+
+.beat__aside {
+  margin-top: 1.4rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--amber);
+}
+
+.beat__aside dt {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 0.4rem;
+}
+
+.beat__aside dd {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* ---------- 3d callouts ---------- */
+
+.anno {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: rgba(4, 6, 11, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.3rem 0.6rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  user-select: none;
+  animation: anno-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.anno__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.anno[data-tone='cyan'] .anno__dot {
+  background: var(--cyan);
+  box-shadow: 0 0 8px var(--cyan);
+}
+.anno[data-tone='amber'] .anno__dot {
+  background: var(--amber);
+  box-shadow: 0 0 8px var(--amber);
+}
+.anno[data-tone='violet'] .anno__dot {
+  background: var(--violet);
+  box-shadow: 0 0 8px var(--violet);
+}
+
+@keyframes anno-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 820px) {
+  /* Callouts collide with the bottom copy sheet on narrow screens. */
+  .anno {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anno {
+    animation-duration: 0.01ms;
+  }
+}
+
+/* ---------- hud ---------- */
+
+.hud {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hud__bar {
+  position: absolute;
+  inset: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem clamp(1.5rem, 6vw, 7rem);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hud__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  will-change: transform;
+}
+
+.rail {
+  position: absolute;
+  right: clamp(1rem, 3vw, 2.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  gap: 1.1rem;
+  pointer-events: auto;
+  /* The rail floats over live geometry that can be near-white (the lit die).
+     A local scrim keeps the labels legible without a hard panel. */
+  padding: 0.9rem 0.9rem 0.9rem 2rem;
+  margin: -0.9rem -0.9rem -0.9rem -2rem;
+  background: radial-gradient(
+    120% 100% at 100% 50%,
+    rgba(4, 6, 11, 0.78) 0%,
+    rgba(4, 6, 11, 0.5) 55%,
+    transparent 100%
+  );
+}
+
+.rail__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.45;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.rail__item[data-active='true'],
+.rail__item:hover {
+  opacity: 1;
+  color: var(--ink);
+}
+
+.rail__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  flex: none;
+}
+
+.rail__item[data-active='true'] .rail__dot {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  box-shadow: 0 0 12px var(--cyan);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- step navigation ---------- */
+
+.nav {
+  position: absolute;
+  left: clamp(1.5rem, 6vw, 7rem);
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  pointer-events: auto;
+}
+
+.nav__btn {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: rgba(10, 14, 22, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.nav__btn:hover:not(:disabled) {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(79, 216, 255, 0.1);
+}
+
+.nav__btn:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.nav__btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Play sits first in the row and is the only control that changes what the deck
+   does rather than where it is, so it reads as lit when active rather than
+   merely hovered. */
+.nav__btn--play[data-on] {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(79, 216, 255, 0.14);
+}
+
+/* Stopped, play becomes a pill with a word in it: the first thing a new reader
+   needs to find, so it is the one control that says what it is. */
+.nav__btn--play[data-label] {
+  width: auto;
+  padding: 0 1.05rem 0 0.85rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  border-radius: 999px;
+}
+
+.nav__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Advertises the play button whenever the deck is not playing, so it is the
+   one thing on a still screen that moves. Each pulse is followed by a rest, so
+   it reads as a heartbeat rather than a nag. Delayed so it starts after the
+   chapter's opening camera move has settled, rather than competing with it. */
+.nav__btn--play[data-attract] {
+  animation: attract 3.2s ease-out 1.4s infinite;
+}
+
+@keyframes attract {
+  0% {
+    box-shadow: 0 0 0 0 rgba(79, 216, 255, 0.38);
+    border-color: var(--line);
+    color: var(--ink);
+  }
+  30% {
+    border-color: var(--cyan);
+    color: var(--cyan);
+  }
+  65%,
+  100% {
+    box-shadow: 0 0 0 11px rgba(79, 216, 255, 0);
+    border-color: var(--line);
+    color: var(--ink);
+  }
+}
+
+/* A slow breath while a voice is actually producing sound. This is the only
+   feedback that narration is working before the first word arrives — on a cold
+   load the audio file or the synthesiser can take a moment, and without it the
+   button looks like it did nothing. */
+.nav__btn--play[data-speaking] {
+  animation: narrating 2.4s ease-in-out infinite;
+}
+
+@keyframes narrating {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(79, 216, 255, 0.34); }
+  50% { box-shadow: 0 0 0 6px rgba(79, 216, 255, 0); }
+}
+
+/* Secondary to play: they qualify the mode rather than entering it. */
+.nav__btn--mute,
+.nav__btn--cc {
+  width: 2.2rem;
+  height: 2.2rem;
+  opacity: 0.85;
+}
+
+.nav__btn--mute[data-off],
+.nav__btn--cc[data-off] {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__btn--play[data-speaking] {
+    animation: none;
+    box-shadow: 0 0 0 3px rgba(79, 216, 255, 0.28);
+  }
+
+  /* The button still has to stand out to a reader who has not found it, so the
+     attract state keeps the colour and drops only the motion. */
+  .nav__btn--play[data-attract] {
+    animation: none;
+    border-color: var(--cyan);
+    color: var(--cyan);
+  }
+}
+
+/* ---------- captions ---------- */
+
+/* Sits above the step controls, and clear of the copy column on wide screens —
+   centring it in the whole viewport would put it under the card, where the
+   reader is already reading. */
+.caption {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 6.5rem;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  padding: 0 clamp(1.5rem, 6vw, 7rem);
+  pointer-events: none;
+}
+
+/* The term she is pointing at, above the line she is saying it in. Same dot +
+   label grammar as the scene's own callouts, so the two read as one system. */
+.caption__term {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.caption__term i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.caption__line[data-tone='amber'] .caption__term {
+  color: var(--amber);
+}
+.caption__line[data-tone='violet'] .caption__term {
+  color: var(--violet);
+}
+.caption__line[data-tone='plain'] .caption__term {
+  color: var(--ink);
+}
+
+.caption__line {
+  max-width: 40rem;
+  margin: 0;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--line);
+  background: rgba(6, 9, 15, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  text-wrap: balance;
+  animation: caption-in 0.28s ease both;
+}
+
+@keyframes caption-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35rem);
+  }
+}
+
+@media (min-width: 821px) {
+  /* The copy column owns the left of the screen: its own inset plus its width.
+     Padding the caption past it centres the line in what is actually free. */
+  .caption {
+    padding-left: calc(clamp(1.5rem, 6vw, 7rem) + min(30rem, 100%) + 2rem);
+  }
+}
+
+@media (max-width: 820px) {
+  /* Docked to the foot of the model band, not floated above the nav.
+     On a wide screen the copy sits in a column on the left and the caption is
+     padded clear of it. Compact stacks instead — model on top, then the chapter
+     strip, then the copy sheet — so "above the nav" put the caption straight
+     through the middle of the copy, with both texts overlapping and neither
+     readable. The band's lower edge is the only space that is reliably free,
+     and it is where a pinned card already docks, so the two agree.
+
+     The 3.5rem clears the chapter strip and the sheet grip, which both sit just
+     under the band edge — measured at 390x844, where the strip starts 348px down
+     and a card docked at the bare band edge landed on top of it. On a screen
+     this size something has to be overlapped; the model is the right choice,
+     because the caption is about what is on it and the panel is translucent. */
+  .caption {
+    top: auto;
+    bottom: calc((1 - var(--band, 0.46)) * 100dvh + 3.5rem);
+    transition: bottom 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+    padding: 0 1.1rem;
+  }
+
+  .caption__line {
+    font-size: 0.88rem;
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caption__line {
+    animation: none;
+  }
+}
+
+.nav__count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  min-width: 4.5rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.nav__hint {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.55;
+}
+
+@media (max-width: 820px) {
+  .nav {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    gap: 0.6rem;
+    /* Sits above the sheet, so stepping works whether or not it is open. */
+    z-index: 5;
+  }
+
+  /* Below 44px a control is measurably harder to hit; these were 42. */
+  .nav__btn {
+    width: 46px;
+    height: 46px;
+  }
+
+  .nav__btn--mute,
+  .nav__btn--cc {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* No keyboard to hint at, and horizontal space is tight. */
+  .nav__hint {
+    display: none;
+  }
+}
+
+/* ---------- responsive ---------- */
+
+/* ---------- short, wide viewports ---------- */
+
+/* The copy never runs under the step controls, at any wide size.
+   This started as a fix for a landscape tablet — an iPad Mini is 1133x744, and
+   the card grew to 84% of the height and ran under the nav — and was keyed on
+   `max-height: 820px` because that was the shape that broke. Then a beat gained
+   a comparison toggle and a live readout, the card got taller, and it ran under
+   the nav on a 900px-tall desktop window too: the cap was keyed on the viewport
+   when the thing that actually overflows is the *content*. It applies to every
+   wide layout now, and a card only scrolls when it genuinely needs to. */
+@media (min-width: 821px) {
+  .beats {
+    max-height: calc(100dvh - 10.5rem);
+    display: flex;
+  }
+
+  .beat {
+    display: flex;
+    min-height: 0;
+    width: 100%;
+  }
+
+  .beat__card {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    max-height: 100%;
+  }
+}
+
+/* Short and wide additionally needs the copy pulled in from the edges, or the
+   card has no room to breathe between the header and the controls. */
+@media (min-width: 821px) and (max-height: 820px) {
+  .story {
+    align-items: center;
+    padding-top: 4.5rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Tighter still: a very short window needs the copy narrower as well, or the
+   model has nowhere left to be. */
+@media (min-width: 821px) and (max-height: 620px) {
+  .beats {
+    width: min(24rem, 100%);
+    max-height: calc(100dvh - 9rem);
+  }
+}
+
+/* ---------- compact layout ---------- */
+
+/* One breakpoint, and it matches COMPACT_MAX_PX in ui/layout.ts. The band
+   fraction is not repeated here — it is written to --band by the same module
+   that tells the camera rig where to aim, so the sheet and the framing can
+   never disagree. */
+@media (max-width: 820px) {
+  /* The copy stops floating over the model and becomes a sheet under it. */
+  .story {
+    top: calc(var(--band, 0.46) * 100dvh);
+    align-items: stretch;
+    padding: 0;
+    pointer-events: auto;
+    background: linear-gradient(180deg, rgba(4, 6, 11, 0.86), var(--bg) 12%);
+    border-top: 1px solid var(--line);
+    /* `top` as well as `transform`: the band grows when this collapses, so both
+       have to move together or the sheet's edge jumps while it slides. */
+    transition:
+      transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+      top 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Collapsed: slide down until only a peek remains, handing the model the
+     whole screen. */
+  .story[data-compact='true']:not([data-open='true']) {
+    transform: translateY(calc(100% - var(--sheet-peek, 0.13) * 100dvh));
+  }
+
+  /* And the peek is a surface, not a preview.
+     What shows through it is the *top* of the card — kicker, then heading — and
+     the peek is at the foot of the screen, which is exactly where the step
+     controls live. Open, the card scrolls clear of them on 5.5rem of padding;
+     collapsed there is no padding that helps, so the heading ran straight
+     through the buttons and neither could be read. The chapter strip and the
+     caption already say where you are; this only needs to say there is more. */
+  .story[data-compact='true']:not([data-open='true']) .beats {
+    opacity: 0;
+    transition: opacity 0.18s ease;
+    pointer-events: none;
+  }
+
+  .story[data-compact='true'] .beats {
+    transition: opacity 0.28s ease 0.06s;
+  }
+
+  .beats {
+    width: 100%;
+    height: 100%;
+    /* Long beats scroll inside the sheet instead of running off the screen —
+       the worst card in the course is 82% of a phone viewport. */
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding: 1.5rem 1.25rem 5.5rem;
+  }
+
+  .beat__card {
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 0;
+    padding: 0;
+  }
+
+  /* Callouts come back. They were hidden because they collided with a copy
+     sheet that used to overlap the model; now the model has its own band. */
+  .anno {
+    display: inline-flex;
+    font-size: 0.6rem;
+    padding: 0.22rem 0.45rem;
+  }
+
+  .rail {
+    display: none;
+  }
+
+  .hud__bar {
+    padding: 1rem 1.25rem;
+    font-size: 0.62rem;
+  }
+}
+
+/* The chapter strip: the vertical rail, turned on its side. */
+.strip {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .strip {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(var(--band, 0.46) * 100dvh - 2.5rem);
+    transition: top 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+    display: flex;
+    gap: 0.4rem;
+    padding: 0 1.25rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    pointer-events: auto;
+    z-index: 3;
+  }
+
+  .strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .strip__item {
+    flex: none;
+    background: rgba(4, 6, 11, 0.72);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+    min-height: 32px;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .strip__item[data-active='true'] {
+    color: var(--cyan);
+    border-color: rgba(79, 216, 255, 0.5);
+  }
+
+  /* The grab handle that collapses the sheet. Sits on the seam. */
+  .sheet__grip {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(var(--band, 0.46) * 100dvh - 1.15rem);
+    transition: top 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 4;
+    pointer-events: auto;
+    display: grid;
+    place-items: center;
+    width: 5rem;
+    height: 2.3rem;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .sheet__grip i {
+    display: block;
+    width: 2.5rem;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--line-strong, rgba(140, 175, 220, 0.4));
+  }
+
+  .sheet__grip:focus-visible i {
+    background: var(--cyan);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .beat {
+    animation-duration: 0.01ms;
+  }
+}
+
+/* Kept so the nav can fade with the rest of the chrome if needed. */
+.nav {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ---------- truth tables ---------- */
+
+.truth {
+  width: 100%;
+  margin-top: 1.3rem;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.truth th {
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 0.5rem 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.truth td {
+  padding: 0.42rem 0.5rem 0.42rem 0;
+  color: var(--muted);
+  border-bottom: 1px solid rgba(140, 175, 220, 0.07);
+  transition: color 0.25s ease;
+}
+
+/* The row the circuit is currently showing. */
+.truth tr[data-active='true'] td {
+  color: var(--ink);
+}
+
+.truth tr[data-active='true'] {
+  background: linear-gradient(90deg, rgba(79, 216, 255, 0.13), transparent 85%);
+  box-shadow: inset 2px 0 0 var(--cyan);
+}
+
+/* A 1 on an output reads as "the gate fired". */
+.truth td[data-on='true'] {
+  color: var(--cyan);
+}
+
+.truth td[data-on='true'][data-tone='amber'] {
+  color: var(--amber);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .truth td {
+    transition: none;
+  }
+}
+
+/* ---------- lecture chrome ---------- */
+
+.hud__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  pointer-events: auto;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.hud__back:hover,
+.hud__back:focus-visible {
+  color: var(--cyan);
+}
+
+.hud__title {
+  color: var(--muted);
+}
+
+/* The chapter name rides in the kicker so the reader always knows which of the
+   six chapters they are inside without opening the rail. */
+.beat__chapter {
+  color: var(--muted);
+}
+
+.beat__chapter::after {
+  content: '/';
+  margin-left: 0.75rem;
+  opacity: 0.5;
+}
+
+/* ---------- tooltips ---------- */
+
+.tip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: min(20rem, calc(100vw - 2rem));
+  pointer-events: none;
+  background: rgba(6, 9, 16, 0.94);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--cyan);
+  border-radius: 0 3px 3px 0;
+  padding: 0.7rem 0.85rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: tip-in 0.16s ease both;
+  will-change: transform;
+}
+
+.tip[data-tone='amber'] {
+  border-left-color: var(--amber);
+}
+.tip[data-tone='violet'] {
+  border-left-color: var(--violet);
+}
+.tip[data-tone='plain'] {
+  border-left-color: var(--muted);
+}
+
+.tip__term {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.tip[data-tone='amber'] .tip__term {
+  color: var(--amber);
+}
+.tip[data-tone='violet'] .tip__term {
+  color: var(--violet);
+}
+.tip[data-tone='plain'] .tip__term {
+  color: var(--ink);
+}
+
+.tip__line {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: #c3ccdb;
+}
+
+.tip__fact {
+  margin: 0.5rem 0 0;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+@keyframes tip-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tip {
+    animation-duration: 0.01ms;
+  }
+}
+
+/* Docked rather than following a cursor: on touch the card is summoned by a
+   tap, so it sits at the foot of the model band where it cannot cover the thing
+   that was just tapped. */
+.tip[data-pinned] {
+  transform: none !important;
+  left: 0.75rem;
+  right: 0.75rem;
+  width: auto;
+  top: auto;
+  bottom: calc((1 - var(--band, 0.46)) * 100dvh + 0.75rem);
+  padding-right: 2.25rem;
+}
+
+.tip__close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.tip[data-pinned] {
+  pointer-events: auto;
+}
+
+/* ---------- syllabus ---------- */
+
+.syllabus {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background:
+    linear-gradient(180deg, rgba(4, 6, 11, 0.88) 0%, rgba(4, 6, 11, 0.97) 30%);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  animation: syllabus-in 0.4s ease both;
+}
+
+@keyframes syllabus-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.syllabus__inner {
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 3rem) 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 6vw, 4rem);
+}
+
+.syllabus__head {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.syllabus__kicker {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.syllabus__title {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.syllabus__title em {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+.syllabus__lede {
+  margin: 0;
+  text-wrap: pretty;
+  font-size: clamp(0.98rem, 1.4vw, 1.1rem);
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.part__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.part__no {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.part__name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.part__blurb {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.part__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.lecture {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3rem 1fr auto;
+  gap: 1.25rem;
+  align-items: baseline;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0.5rem 1rem 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease, padding 0.2s ease;
+}
+
+.lecture:hover:not(:disabled),
+.lecture:focus-visible:not(:disabled) {
+  background: rgba(79, 216, 255, 0.05);
+  padding-left: 0.6rem;
+  outline: none;
+}
+
+.lecture:focus-visible {
+  outline: 1px solid var(--cyan);
+  outline-offset: -1px;
+}
+
+.lecture:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.lecture__no {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.lecture:hover:not(:disabled) .lecture__no {
+  color: var(--cyan);
+}
+
+.lecture__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.lecture__title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.lecture__sub {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* The trade this lecture is about. Set apart from the subtitle because it is
+   the course's organising claim, not a description. */
+.lecture__constraint {
+  margin-top: 0.3rem;
+  padding-left: 0.7rem;
+  border-left: 2px solid rgba(160, 107, 255, 0.5);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  line-height: 1.55;
+  color: #9aa7bd;
+}
+
+.lecture__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.lecture__meta i {
+  font-style: normal;
+  color: var(--faint, #6b7a90);
+}
+
+.lecture[data-state='live'] .lecture__meta {
+  color: var(--cyan);
+}
+
+/* The narrated badge. Violet rather than the meta column's cyan, because it is
+   a different kind of fact — the cyan numbers describe how long the lecture is,
+   this says something about how you can take it. */
+.lecture__voiced {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.1rem;
+  font-style: normal;
+  color: var(--violet);
+  opacity: 0.9;
+}
+
+.lecture__voiced svg {
+  flex: none;
+}
+
+.syllabus__foot {
+  border-top: 1px solid var(--line);
+  padding-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.syllabus__foot p {
+  margin: 0;
+  flex: 1 1 24ch;
+  text-wrap: pretty;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--cyan);
+}
+
+.counter__bits {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.counter__bits i {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+  transition: background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.counter__bits i[data-on] {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  box-shadow: 0 0 8px rgba(79, 216, 255, 0.55);
+}
+
+.counter__value {
+  min-width: 3ch;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 620px) {
+  .lecture {
+    grid-template-columns: 2.2rem 1fr;
+    gap: 0.75rem;
+  }
+
+  .lecture__meta {
+    grid-column: 2;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: baseline;
+  }
+
+  .part__blurb {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .syllabus {
+    animation-duration: 0.01ms;
+  }
+}
+
+/* ---------- reader controls ---------- */
+
+/*
+ * The two-state control for a beat that states a comparison.
+ *
+ * Deliberately looks like a control rather than a caption: a beat carrying one
+ * of these is incomplete until the reader operates it, so it has to read as
+ * something to press. Targets are 44px tall to stay usable on a tablet, which
+ * is where most of this course is read.
+ */
+.toggle {
+  margin-top: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toggle__label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.toggle__pair {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.toggle__btn {
+  flex: 1 1 auto;
+  min-height: 44px;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: rgba(140, 175, 220, 0.04);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.toggle__btn:hover {
+  color: var(--ink);
+  border-color: rgba(79, 216, 255, 0.4);
+}
+
+.toggle__btn:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+.toggle__btn[data-on] {
+  color: var(--ink);
+  border-color: var(--cyan);
+  background: rgba(79, 216, 255, 0.12);
+  box-shadow: inset 2px 0 0 var(--cyan);
+}
+
+/* ---------- live readouts ---------- */
+
+/*
+ * Numbers the scene is publishing while it animates.
+ *
+ * Tabular figures because these change continuously and a proportional digit
+ * makes the row jitter, which reads as instability in the measurement rather
+ * than in the typeface.
+ */
+.readout {
+  margin: 1.3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.readout__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.34rem 0.5rem 0.34rem 0;
+  border-bottom: 1px solid rgba(140, 175, 220, 0.07);
+}
+
+.readout__row dt {
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.readout__row dd {
+  margin: 0;
+  color: var(--ink);
+  text-align: right;
+}
+
+/* The figure this beat is actually about. */
+.readout__row[data-key] {
+  background: linear-gradient(90deg, rgba(79, 216, 255, 0.11), transparent 85%);
+  box-shadow: inset 2px 0 0 var(--cyan);
+  padding-left: 0.5rem;
+}
+
+.readout__row[data-key] dd {
+  color: var(--cyan);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle__btn {
+    transition: none;
+  }
+}
+
+/* ---------- jargon and citations ---------- */
+
+/* A word with a definition behind it. Dotted rather than solid so it does not
+   read as a link — it opens a note, it does not go anywhere. */
+.term {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: help;
+  /* Tinted as well as dotted, so the offer is visible at a glance rather than
+     only to a reader already scanning for underlines. */
+  color: #bfefff;
+  text-decoration: underline dotted rgba(79, 216, 255, 0.85);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.22em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.term:hover,
+.term[data-open] {
+  color: var(--cyan);
+  text-decoration-color: var(--cyan);
+  background: rgba(79, 216, 255, 0.12);
+  border-radius: 2px;
+}
+
+/* A marker never starts a line on its own: it rides with the word it
+   footnotes, the way print keeps a superscript on its word. */
+.cite-wrap {
+  white-space: nowrap;
+}
+
+.term:focus-visible,
+.cite__btn:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.cite {
+  line-height: 0;
+  vertical-align: super;
+  font-size: 0.62em;
+}
+
+.cite__btn {
+  font-family: var(--font-mono);
+  font-size: inherit;
+  color: var(--amber);
+  background: none;
+  border: 0;
+  /* Tiny glyph, fair-sized target: the padding is the hit area. */
+  padding: 0.35em 0.3em;
+  margin: -0.35em -0.1em;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.cite__btn:hover,
+.cite__btn[data-open] {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.note {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: min(22rem, calc(100vw - 24px));
+  background: rgba(6, 9, 16, 0.96);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--cyan);
+  border-radius: 0 4px 4px 0;
+  padding: 0.8rem 1rem 0.9rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  animation: tip-in 0.16s ease-out both;
+}
+
+/* A definition carries the course's cyan, a source its amber — the same two
+   colours as the dotted word and the superscript that open them. */
+.note[data-kind='term'] {
+  background:
+    linear-gradient(135deg, rgba(79, 216, 255, 0.26), rgba(160, 107, 255, 0.2) 75%),
+    rgba(6, 9, 16, 0.96);
+  border-color: rgba(79, 216, 255, 0.45);
+  border-left-color: var(--cyan);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.45),
+    0 0 28px rgba(79, 216, 255, 0.22);
+}
+
+.note[data-kind='term'] .note__term {
+  font-size: 0.72rem;
+  color: #7fe4ff;
+  text-shadow: 0 0 12px rgba(79, 216, 255, 0.55);
+}
+
+.note[data-kind='term'] .note__line {
+  color: #dbe7f5;
+}
+
+.note[data-kind='cite'] {
+  background:
+    linear-gradient(135deg, rgba(255, 171, 64, 0.1), transparent 70%),
+    rgba(6, 9, 16, 0.96);
+  border-left-color: var(--amber);
+}
+
+.note__term {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.note[data-kind='cite'] .note__term {
+  color: var(--amber);
+}
+
+.note__line {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: #c3ccdb;
+}
+
+.note__refs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.note__refs a,
+.sources__list a {
+  color: var(--ink);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 171, 64, 0.5);
+  text-underline-offset: 0.18em;
+}
+
+.note__refs a:hover,
+.sources__list a:hover {
+  color: var(--amber);
+}
+
+.note__meta,
+.sources__meta {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+/* ---------- sources & credits ---------- */
+
+.hud__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hud__sources {
+  pointer-events: auto;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: var(--amber);
+  background: none;
+  border: 1px solid rgba(255, 171, 64, 0.35);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.hud__sources:hover,
+.hud__sources:focus-visible {
+  background: rgba(255, 171, 64, 0.1);
+  border-color: var(--amber);
+}
+
+.sources {
+  width: min(44rem, calc(100vw - 32px));
+  max-height: min(86vh, 60rem);
+  padding: 0;
+  color: var(--ink);
+  background: rgba(8, 11, 18, 0.97);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+.sources::backdrop {
+  background: rgba(2, 4, 8, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.sources__inner {
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+}
+
+.sources__head {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.sources__kicker {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.sources h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  letter-spacing: -0.02em;
+}
+
+.sources h3 {
+  margin: 1.75rem 0 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sources__close {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sources__close:hover,
+.sources__close:focus-visible {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.sources__people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #c3ccdb;
+}
+
+.sources__people strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.sources__ref {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--amber);
+}
+
+.sources__list {
+  margin: 0;
+  padding-left: 1.6rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.sources__list li::marker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--amber);
+}
+
+@media (max-width: 820px) {
+  .hud__right {
+    gap: 0.6rem;
+  }
+
+  /* The lecture title already rides in the strip's context; the button is the
+     more useful of the two when there is room for one. */
+  .hud__right .hud__title {
+    display: none;
+  }
+
+  .hud__sources {
+    padding: 0.4rem 0.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .note {
+    animation: none;
+  }
+}
+
+/* Emphasis in the copy. Space Grotesk has no true italic, so the slant is
+   synthesised; the brighter ink carries the stress as much as the angle. */
+.beat__body em,
+.beat__aside em,
+.caption__line em,
+.tip__line em {
+  font-style: italic;
+  color: var(--ink);
+}

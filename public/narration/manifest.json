@@ -1,0 +1,4815 @@
+{
+  "model": "eleven_v3",
+  "beats": {
+    "chip/package/whole/0": {
+      "file": "chip/package-whole-0.mp3",
+      "hash": "3c1b7a8c15a2c026",
+      "duration": 10.8,
+      "characters": 147,
+      "role": "host"
+    },
+    "chip/package/whole/1": {
+      "file": "chip/package-whole-1.mp3",
+      "hash": "c8195fba2c43beae",
+      "duration": 8.32,
+      "characters": 95,
+      "role": "host"
+    },
+    "chip/package/whole/2": {
+      "file": "chip/package-whole-2.mp3",
+      "hash": "fc1c130c9e5eb979",
+      "duration": 16.56,
+      "characters": 235,
+      "role": "host"
+    },
+    "chip/package/lid/0": {
+      "file": "chip/package-lid-0.mp3",
+      "hash": "fe70dee642093f11",
+      "duration": 7.44,
+      "characters": 115,
+      "role": "host"
+    },
+    "chip/package/lid/1": {
+      "file": "chip/package-lid-1.mp3",
+      "hash": "2a35f298ffc46042",
+      "duration": 13.44,
+      "characters": 187,
+      "role": "host"
+    },
+    "chip/package/lid/2": {
+      "file": "chip/package-lid-2.mp3",
+      "hash": "d50d44d5def1cc62",
+      "duration": 12,
+      "characters": 163,
+      "role": "host"
+    },
+    "chip/package/lid/3": {
+      "file": "chip/package-lid-3.mp3",
+      "hash": "daf1a2799749a594",
+      "duration": 12.32,
+      "characters": 169,
+      "role": "aside"
+    },
+    "chip/package/die/0": {
+      "file": "chip/package-die-0.mp3",
+      "hash": "78ef30033698ab84",
+      "duration": 4.64,
+      "characters": 45,
+      "role": "host"
+    },
+    "chip/package/die/1": {
+      "file": "chip/package-die-1.mp3",
+      "hash": "5b0bb2e58c512596",
+      "duration": 10.72,
+      "characters": 153,
+      "role": "host"
+    },
+    "chip/package/die/2": {
+      "file": "chip/package-die-2.mp3",
+      "hash": "7fda6c49d9478a2b",
+      "duration": 12.88,
+      "characters": 181,
+      "role": "host"
+    },
+    "chip/package/substrate/0": {
+      "file": "chip/package-substrate-0.mp3",
+      "hash": "151f53c43512b258",
+      "duration": 6.8,
+      "characters": 86,
+      "role": "host"
+    },
+    "chip/package/substrate/1": {
+      "file": "chip/package-substrate-1.mp3",
+      "hash": "1dc6c73331789b38",
+      "duration": 11.28,
+      "characters": 160,
+      "role": "host"
+    },
+    "chip/package/substrate/2": {
+      "file": "chip/package-substrate-2.mp3",
+      "hash": "d92b9d70ff7a63cb",
+      "duration": 8.8,
+      "characters": 125,
+      "role": "host"
+    },
+    "chip/package/substrate/3": {
+      "file": "chip/package-substrate-3.mp3",
+      "hash": "ba509293dd0e925a",
+      "duration": 11.92,
+      "characters": 177,
+      "role": "aside"
+    },
+    "chip/package/exploded/0": {
+      "file": "chip/package-exploded-0.mp3",
+      "hash": "7260e905c34e530c",
+      "duration": 3.28,
+      "characters": 47,
+      "role": "host"
+    },
+    "chip/package/exploded/1": {
+      "file": "chip/package-exploded-1.mp3",
+      "hash": "92d0deace00c9d38",
+      "duration": 9.52,
+      "characters": 69,
+      "role": "host"
+    },
+    "chip/package/exploded/2": {
+      "file": "chip/package-exploded-2.mp3",
+      "hash": "5ac868c1fa9deac6",
+      "duration": 9.12,
+      "characters": 117,
+      "role": "host"
+    },
+    "chip/package/exploded/3": {
+      "file": "chip/package-exploded-3.mp3",
+      "hash": "6eb02fec5270a15e",
+      "duration": 5.68,
+      "characters": 92,
+      "role": "host"
+    },
+    "chip/die/floorplan/0": {
+      "file": "chip/die-floorplan-0.mp3",
+      "hash": "69044f84c9dd4683",
+      "duration": 2.8,
+      "characters": 33,
+      "role": "host"
+    },
+    "chip/die/floorplan/1": {
+      "file": "chip/die-floorplan-1.mp3",
+      "hash": "35c7854730acadfa",
+      "duration": 6.64,
+      "characters": 91,
+      "role": "host"
+    },
+    "chip/die/floorplan/2": {
+      "file": "chip/die-floorplan-2.mp3",
+      "hash": "ed0ba7176e3cc7eb",
+      "duration": 3.76,
+      "characters": 47,
+      "role": "host"
+    },
+    "chip/die/floorplan/3": {
+      "file": "chip/die-floorplan-3.mp3",
+      "hash": "84f0575f6137c405",
+      "duration": 7.68,
+      "characters": 82,
+      "role": "host"
+    },
+    "chip/die/floorplan/4": {
+      "file": "chip/die-floorplan-4.mp3",
+      "hash": "f280899d4b9133c2",
+      "duration": 13.92,
+      "characters": 216,
+      "role": "host"
+    },
+    "chip/die/cores/0": {
+      "file": "chip/die-cores-0.mp3",
+      "hash": "e45011bdfccff692",
+      "duration": 7.52,
+      "characters": 102,
+      "role": "host"
+    },
+    "chip/die/cores/1": {
+      "file": "chip/die-cores-1.mp3",
+      "hash": "6ea5503ec6d9977a",
+      "duration": 6.64,
+      "characters": 85,
+      "role": "host"
+    },
+    "chip/die/cores/2": {
+      "file": "chip/die-cores-2.mp3",
+      "hash": "5113a6d520387f8e",
+      "duration": 11.68,
+      "characters": 162,
+      "role": "host"
+    },
+    "chip/die/cache/0": {
+      "file": "chip/die-cache-0.mp3",
+      "hash": "83987415d7f64a68",
+      "duration": 2.8,
+      "characters": 53,
+      "role": "host"
+    },
+    "chip/die/cache/1": {
+      "file": "chip/die-cache-1.mp3",
+      "hash": "459955ce3931fd53",
+      "duration": 11.04,
+      "characters": 167,
+      "role": "host"
+    },
+    "chip/die/cache/2": {
+      "file": "chip/die-cache-2.mp3",
+      "hash": "d84af1d7c932a9af",
+      "duration": 14.4,
+      "characters": 176,
+      "role": "host"
+    },
+    "chip/die/cache/3": {
+      "file": "chip/die-cache-3.mp3",
+      "hash": "e45efbd1e358b5b2",
+      "duration": 16.4,
+      "characters": 195,
+      "role": "aside"
+    },
+    "chip/die/cycle/0": {
+      "file": "chip/die-cycle-0.mp3",
+      "hash": "be886b3939d28f3f",
+      "duration": 8.64,
+      "characters": 77,
+      "role": "host"
+    },
+    "chip/die/cycle/1": {
+      "file": "chip/die-cycle-1.mp3",
+      "hash": "2836514888d9093a",
+      "duration": 10.56,
+      "characters": 123,
+      "role": "host"
+    },
+    "chip/die/cycle/2": {
+      "file": "chip/die-cycle-2.mp3",
+      "hash": "0f4e3ce00a835eb7",
+      "duration": 17.44,
+      "characters": 221,
+      "role": "host"
+    },
+    "chip/transistor/arrive/0": {
+      "file": "chip/transistor-arrive-0.mp3",
+      "hash": "ae3e4fca9948868d",
+      "duration": 2.56,
+      "characters": 28,
+      "role": "host"
+    },
+    "chip/transistor/arrive/1": {
+      "file": "chip/transistor-arrive-1.mp3",
+      "hash": "738d074da5ddcb47",
+      "duration": 5.2,
+      "characters": 56,
+      "role": "host"
+    },
+    "chip/transistor/arrive/2": {
+      "file": "chip/transistor-arrive-2.mp3",
+      "hash": "a07aababf0c8c190",
+      "duration": 13.12,
+      "characters": 203,
+      "role": "host"
+    },
+    "chip/transistor/parts/0": {
+      "file": "chip/transistor-parts-0.mp3",
+      "hash": "2fd1a4e3d1232131",
+      "duration": 8.4,
+      "characters": 128,
+      "role": "host"
+    },
+    "chip/transistor/parts/1": {
+      "file": "chip/transistor-parts-1.mp3",
+      "hash": "cbd2550ea0e831a9",
+      "duration": 2.48,
+      "characters": 23,
+      "role": "host"
+    },
+    "chip/transistor/parts/2": {
+      "file": "chip/transistor-parts-2.mp3",
+      "hash": "3e6ce544a327123c",
+      "duration": 10.8,
+      "characters": 129,
+      "role": "host"
+    },
+    "chip/transistor/parts/3": {
+      "file": "chip/transistor-parts-3.mp3",
+      "hash": "3ca381f7f1305693",
+      "duration": 2.88,
+      "characters": 33,
+      "role": "host"
+    },
+    "chip/transistor/parts/4": {
+      "file": "chip/transistor-parts-4.mp3",
+      "hash": "d0c6b3b8545932fa",
+      "duration": 13.92,
+      "characters": 200,
+      "role": "host"
+    },
+    "chip/transistor/switching/0": {
+      "file": "chip/transistor-switching-0.mp3",
+      "hash": "31a591272088565c",
+      "duration": 2.32,
+      "characters": 43,
+      "role": "host"
+    },
+    "chip/transistor/switching/1": {
+      "file": "chip/transistor-switching-1.mp3",
+      "hash": "7110104bd2a5b2b4",
+      "duration": 16.56,
+      "characters": 200,
+      "role": "host"
+    },
+    "chip/transistor/switching/2": {
+      "file": "chip/transistor-switching-2.mp3",
+      "hash": "00d300b21e7ddaf7",
+      "duration": 7.52,
+      "characters": 94,
+      "role": "host"
+    },
+    "chip/transistor/switching/3": {
+      "file": "chip/transistor-switching-3.mp3",
+      "hash": "c68b8266df30c20b",
+      "duration": 7.28,
+      "characters": 91,
+      "role": "host"
+    },
+    "chip/transistor/switching/4": {
+      "file": "chip/transistor-switching-4.mp3",
+      "hash": "415ae13b735c6103",
+      "duration": 27.36,
+      "characters": 372,
+      "role": "aside"
+    },
+    "chip/transistor/logic/0": {
+      "file": "chip/transistor-logic-0.mp3",
+      "hash": "19da48636c34488e",
+      "duration": 6,
+      "characters": 73,
+      "role": "host"
+    },
+    "chip/transistor/logic/1": {
+      "file": "chip/transistor-logic-1.mp3",
+      "hash": "122e7322c84301ea",
+      "duration": 12.4,
+      "characters": 175,
+      "role": "host"
+    },
+    "chip/transistor/logic/2": {
+      "file": "chip/transistor-logic-2.mp3",
+      "hash": "69537a88a5a4ec0e",
+      "duration": 11.2,
+      "characters": 150,
+      "role": "host"
+    },
+    "chip/gates/not/0": {
+      "file": "chip/gates-not-0.mp3",
+      "hash": "e6c0536ccb64d88f",
+      "duration": 3.52,
+      "characters": 51,
+      "role": "host"
+    },
+    "chip/gates/not/1": {
+      "file": "chip/gates-not-1.mp3",
+      "hash": "b9565889b891ae69",
+      "duration": 11.6,
+      "characters": 148,
+      "role": "host"
+    },
+    "chip/gates/not/2": {
+      "file": "chip/gates-not-2.mp3",
+      "hash": "f154f3900bb9b878",
+      "duration": 4.4,
+      "characters": 46,
+      "role": "host"
+    },
+    "chip/gates/not/3": {
+      "file": "chip/gates-not-3.mp3",
+      "hash": "3371e43888a71649",
+      "duration": 10.4,
+      "characters": 153,
+      "role": "host"
+    },
+    "chip/gates/and/0": {
+      "file": "chip/gates-and-0.mp3",
+      "hash": "d00828a6445f1ece",
+      "duration": 6.8,
+      "characters": 71,
+      "role": "host"
+    },
+    "chip/gates/and/1": {
+      "file": "chip/gates-and-1.mp3",
+      "hash": "7af09cde361c35dc",
+      "duration": 2.88,
+      "characters": 41,
+      "role": "host"
+    },
+    "chip/gates/and/2": {
+      "file": "chip/gates-and-2.mp3",
+      "hash": "33bd0be3b568514c",
+      "duration": 8.16,
+      "characters": 72,
+      "role": "host"
+    },
+    "chip/gates/and/3": {
+      "file": "chip/gates-and-3.mp3",
+      "hash": "fb8efeac9a650241",
+      "duration": 6.8,
+      "characters": 107,
+      "role": "host"
+    },
+    "chip/gates/or/0": {
+      "file": "chip/gates-or-0.mp3",
+      "hash": "82e1aa149eced36d",
+      "duration": 6.16,
+      "characters": 70,
+      "role": "host"
+    },
+    "chip/gates/or/1": {
+      "file": "chip/gates-or-1.mp3",
+      "hash": "e9c7e2fb6f3fbf6d",
+      "duration": 6,
+      "characters": 59,
+      "role": "host"
+    },
+    "chip/gates/or/2": {
+      "file": "chip/gates-or-2.mp3",
+      "hash": "a48edf31b81fd155",
+      "duration": 18.32,
+      "characters": 215,
+      "role": "host"
+    },
+    "chip/gates/xor/0": {
+      "file": "chip/gates-xor-0.mp3",
+      "hash": "746e6fe9387bb708",
+      "duration": 5.12,
+      "characters": 69,
+      "role": "host"
+    },
+    "chip/gates/xor/1": {
+      "file": "chip/gates-xor-1.mp3",
+      "hash": "3905b25b5861c9b4",
+      "duration": 6.64,
+      "characters": 93,
+      "role": "host"
+    },
+    "chip/gates/xor/2": {
+      "file": "chip/gates-xor-2.mp3",
+      "hash": "86a53c5750e90e51",
+      "duration": 12.8,
+      "characters": 134,
+      "role": "host"
+    },
+    "chip/gates/xor/3": {
+      "file": "chip/gates-xor-3.mp3",
+      "hash": "dc76ba2e63744c46",
+      "duration": 9.28,
+      "characters": 129,
+      "role": "host"
+    },
+    "chip/gates/bench/0": {
+      "file": "chip/gates-bench-0.mp3",
+      "hash": "583352ac96309152",
+      "duration": 5.76,
+      "characters": 62,
+      "role": "host"
+    },
+    "chip/gates/bench/1": {
+      "file": "chip/gates-bench-1.mp3",
+      "hash": "df9ec579b0949869",
+      "duration": 1.84,
+      "characters": 18,
+      "role": "host"
+    },
+    "chip/gates/bench/2": {
+      "file": "chip/gates-bench-2.mp3",
+      "hash": "007fd0dabb97a9cf",
+      "duration": 2.88,
+      "characters": 22,
+      "role": "host"
+    },
+    "chip/gates/bench/3": {
+      "file": "chip/gates-bench-3.mp3",
+      "hash": "3248c9edffde9310",
+      "duration": 2.08,
+      "characters": 19,
+      "role": "host"
+    },
+    "chip/gates/bench/4": {
+      "file": "chip/gates-bench-4.mp3",
+      "hash": "c932b14779d1c639",
+      "duration": 2.48,
+      "characters": 28,
+      "role": "host"
+    },
+    "chip/gates/bench/5": {
+      "file": "chip/gates-bench-5.mp3",
+      "hash": "a11fb3617d2ae177",
+      "duration": 10.96,
+      "characters": 159,
+      "role": "host"
+    },
+    "chip/gates/bench/6": {
+      "file": "chip/gates-bench-6.mp3",
+      "hash": "cd4b1e95736332c9",
+      "duration": 6.88,
+      "characters": 128,
+      "role": "host"
+    },
+    "chip/adder/halfadder/0": {
+      "file": "chip/adder-halfadder-0.mp3",
+      "hash": "29c55f2ce4b9787f",
+      "duration": 2.4,
+      "characters": 44,
+      "role": "host"
+    },
+    "chip/adder/halfadder/1": {
+      "file": "chip/adder-halfadder-1.mp3",
+      "hash": "c157ff15c54bb509",
+      "duration": 10.88,
+      "characters": 121,
+      "role": "host"
+    },
+    "chip/adder/halfadder/2": {
+      "file": "chip/adder-halfadder-2.mp3",
+      "hash": "0a7c19c7d8ab6af9",
+      "duration": 4.88,
+      "characters": 60,
+      "role": "host"
+    },
+    "chip/adder/halfadder/3": {
+      "file": "chip/adder-halfadder-3.mp3",
+      "hash": "7e941f6236cff5b4",
+      "duration": 5.44,
+      "characters": 69,
+      "role": "host"
+    },
+    "chip/adder/onePlusOne/0": {
+      "file": "chip/adder-onePlusOne-0.mp3",
+      "hash": "4fc24be5e1b49ee4",
+      "duration": 9.12,
+      "characters": 106,
+      "role": "host"
+    },
+    "chip/adder/onePlusOne/1": {
+      "file": "chip/adder-onePlusOne-1.mp3",
+      "hash": "cc14c07a1b6a1b9d",
+      "duration": 3.36,
+      "characters": 26,
+      "role": "host"
+    },
+    "chip/adder/onePlusOne/2": {
+      "file": "chip/adder-onePlusOne-2.mp3",
+      "hash": "a9e6f48d78914313",
+      "duration": 13.68,
+      "characters": 144,
+      "role": "host"
+    },
+    "chip/adder/onePlusOne/3": {
+      "file": "chip/adder-onePlusOne-3.mp3",
+      "hash": "f11cb2977da06396",
+      "duration": 8.48,
+      "characters": 140,
+      "role": "aside"
+    },
+    "chip/adder/ripple/0": {
+      "file": "chip/adder-ripple-0.mp3",
+      "hash": "1b297f63c6b91c1f",
+      "duration": 3.28,
+      "characters": 43,
+      "role": "host"
+    },
+    "chip/adder/ripple/1": {
+      "file": "chip/adder-ripple-1.mp3",
+      "hash": "1d212e8221453c00",
+      "duration": 14.56,
+      "characters": 187,
+      "role": "host"
+    },
+    "chip/adder/ripple/2": {
+      "file": "chip/adder-ripple-2.mp3",
+      "hash": "595579423a79f177",
+      "duration": 7.36,
+      "characters": 103,
+      "role": "host"
+    },
+    "chip/adder/ripple/3": {
+      "file": "chip/adder-ripple-3.mp3",
+      "hash": "b8ffc42f0d987437",
+      "duration": 6.72,
+      "characters": 105,
+      "role": "host"
+    },
+    "chip/fabric/fpga/0": {
+      "file": "chip/fabric-fpga-0.mp3",
+      "hash": "ac0190522af2bfdf",
+      "duration": 5.12,
+      "characters": 80,
+      "role": "host"
+    },
+    "chip/fabric/fpga/1": {
+      "file": "chip/fabric-fpga-1.mp3",
+      "hash": "c1d8c399c0df491b",
+      "duration": 11.04,
+      "characters": 156,
+      "role": "host"
+    },
+    "chip/fabric/fpga/2": {
+      "file": "chip/fabric-fpga-2.mp3",
+      "hash": "397f6b51219180ea",
+      "duration": 8.16,
+      "characters": 133,
+      "role": "host"
+    },
+    "chip/fabric/fpga/3": {
+      "file": "chip/fabric-fpga-3.mp3",
+      "hash": "7f39f11c370949a3",
+      "duration": 5.52,
+      "characters": 82,
+      "role": "host"
+    },
+    "chip/fabric/fpga/4": {
+      "file": "chip/fabric-fpga-4.mp3",
+      "hash": "fb8174730f0ba9a8",
+      "duration": 12.48,
+      "characters": 186,
+      "role": "aside"
+    },
+    "chip/fabric/asic/0": {
+      "file": "chip/fabric-asic-0.mp3",
+      "hash": "0f3b724e6d996b30",
+      "duration": 3.36,
+      "characters": 45,
+      "role": "host"
+    },
+    "chip/fabric/asic/1": {
+      "file": "chip/fabric-asic-1.mp3",
+      "hash": "b1b21568c77460ab",
+      "duration": 16.16,
+      "characters": 203,
+      "role": "host"
+    },
+    "chip/fabric/asic/2": {
+      "file": "chip/fabric-asic-2.mp3",
+      "hash": "b644c69de63a9db3",
+      "duration": 8.88,
+      "characters": 135,
+      "role": "host"
+    },
+    "chip/fabric/asic/3": {
+      "file": "chip/fabric-asic-3.mp3",
+      "hash": "812b09c4f5d1c600",
+      "duration": 8.32,
+      "characters": 131,
+      "role": "host"
+    },
+    "chip/fabric/asic/4": {
+      "file": "chip/fabric-asic-4.mp3",
+      "hash": "74b40d98e36659f5",
+      "duration": 15.76,
+      "characters": 228,
+      "role": "aside"
+    },
+    "chip/fabric/cpu/0": {
+      "file": "chip/fabric-cpu-0.mp3",
+      "hash": "fdd6a19ab90e0225",
+      "duration": 5.28,
+      "characters": 62,
+      "role": "host"
+    },
+    "chip/fabric/cpu/1": {
+      "file": "chip/fabric-cpu-1.mp3",
+      "hash": "0c69d5af742597ca",
+      "duration": 16,
+      "characters": 196,
+      "role": "host"
+    },
+    "chip/fabric/cpu/2": {
+      "file": "chip/fabric-cpu-2.mp3",
+      "hash": "0ee396b3a33468ee",
+      "duration": 13.92,
+      "characters": 216,
+      "role": "host"
+    },
+    "chip/fabric/cpu/3": {
+      "file": "chip/fabric-cpu-3.mp3",
+      "hash": "dccf4b59d2bf8465",
+      "duration": 9.44,
+      "characters": 124,
+      "role": "host"
+    },
+    "chip/fabric/cpu/4": {
+      "file": "chip/fabric-cpu-4.mp3",
+      "hash": "c2c584089558af28",
+      "duration": 4.4,
+      "characters": 75,
+      "role": "aside"
+    },
+    "chip/fabric/gpu/0": {
+      "file": "chip/fabric-gpu-0.mp3",
+      "hash": "249ef91c2ca5c5c8",
+      "duration": 4.64,
+      "characters": 68,
+      "role": "host"
+    },
+    "chip/fabric/gpu/1": {
+      "file": "chip/fabric-gpu-1.mp3",
+      "hash": "d4a3daf86a5901ca",
+      "duration": 9.36,
+      "characters": 146,
+      "role": "host"
+    },
+    "chip/fabric/gpu/2": {
+      "file": "chip/fabric-gpu-2.mp3",
+      "hash": "079be374cd68c409",
+      "duration": 12.96,
+      "characters": 165,
+      "role": "host"
+    },
+    "chip/fabric/gpu/3": {
+      "file": "chip/fabric-gpu-3.mp3",
+      "hash": "37f8ae492dd33580",
+      "duration": 10.4,
+      "characters": 142,
+      "role": "host"
+    },
+    "chip/fabric/gpu/4": {
+      "file": "chip/fabric-gpu-4.mp3",
+      "hash": "61ea46fbab302186",
+      "duration": 12.24,
+      "characters": 161,
+      "role": "aside"
+    },
+    "chip/fabric/tensor/0": {
+      "file": "chip/fabric-tensor-0.mp3",
+      "hash": "22ce0c57e3a56aad",
+      "duration": 4.08,
+      "characters": 53,
+      "role": "host"
+    },
+    "chip/fabric/tensor/1": {
+      "file": "chip/fabric-tensor-1.mp3",
+      "hash": "7d75cbaab3fd1e1c",
+      "duration": 13.68,
+      "characters": 165,
+      "role": "host"
+    },
+    "chip/fabric/tensor/2": {
+      "file": "chip/fabric-tensor-2.mp3",
+      "hash": "a50b7ccc9883ee54",
+      "duration": 12.32,
+      "characters": 196,
+      "role": "host"
+    },
+    "chip/fabric/npu/0": {
+      "file": "chip/fabric-npu-0.mp3",
+      "hash": "274fd89331c09983",
+      "duration": 5.76,
+      "characters": 75,
+      "role": "host"
+    },
+    "chip/fabric/npu/1": {
+      "file": "chip/fabric-npu-1.mp3",
+      "hash": "07cdf97857523282",
+      "duration": 15.2,
+      "characters": 134,
+      "role": "host"
+    },
+    "chip/fabric/npu/2": {
+      "file": "chip/fabric-npu-2.mp3",
+      "hash": "15d623c26ee1abda",
+      "duration": 16,
+      "characters": 229,
+      "role": "host"
+    },
+    "chip/fabric/npu/3": {
+      "file": "chip/fabric-npu-3.mp3",
+      "hash": "93f8502397f787e9",
+      "duration": 4.08,
+      "characters": 68,
+      "role": "host"
+    },
+    "chip/fabric/npu/4": {
+      "file": "chip/fabric-npu-4.mp3",
+      "hash": "2d529a7e3f179948",
+      "duration": 13.76,
+      "characters": 190,
+      "role": "aside"
+    },
+    "chip/fabric/spectrum/0": {
+      "file": "chip/fabric-spectrum-0.mp3",
+      "hash": "635c71a0cc4fa4df",
+      "duration": 6.16,
+      "characters": 71,
+      "role": "host"
+    },
+    "chip/fabric/spectrum/1": {
+      "file": "chip/fabric-spectrum-1.mp3",
+      "hash": "89eb91667725c46b",
+      "duration": 17.04,
+      "characters": 181,
+      "role": "host"
+    },
+    "chip/fabric/spectrum/2": {
+      "file": "chip/fabric-spectrum-2.mp3",
+      "hash": "2e3a4e28edb72270",
+      "duration": 19.2,
+      "characters": 181,
+      "role": "host"
+    },
+    "chip/fabric/spectrum/3": {
+      "file": "chip/fabric-spectrum-3.mp3",
+      "hash": "7596786f9f598eae",
+      "duration": 11.68,
+      "characters": 156,
+      "role": "host"
+    },
+    "chip/fabric/spectrum/4": {
+      "file": "chip/fabric-spectrum-4.mp3",
+      "hash": "b56d458fe995be36",
+      "duration": 18.41,
+      "characters": 198,
+      "role": "host"
+    },
+    "memory/remember/latch/0": {
+      "file": "memory/remember-latch-0.mp3",
+      "hash": "2b779791c3a34b58",
+      "duration": 6.96,
+      "characters": 105,
+      "role": "host"
+    },
+    "memory/remember/latch/1": {
+      "file": "memory/remember-latch-1.mp3",
+      "hash": "9f3c2c5fb1da239b",
+      "duration": 7.6,
+      "characters": 120,
+      "role": "host"
+    },
+    "memory/remember/latch/2": {
+      "file": "memory/remember-latch-2.mp3",
+      "hash": "d00b33123931f61b",
+      "duration": 11.12,
+      "characters": 191,
+      "role": "host"
+    },
+    "memory/remember/latch/3": {
+      "file": "memory/remember-latch-3.mp3",
+      "hash": "12d77b726c1270bd",
+      "duration": 3.44,
+      "characters": 39,
+      "role": "host"
+    },
+    "memory/remember/latch/4": {
+      "file": "memory/remember-latch-4.mp3",
+      "hash": "c79b0dbf7690c588",
+      "duration": 13.52,
+      "characters": 206,
+      "role": "host"
+    },
+    "memory/remember/flipflop/0": {
+      "file": "memory/remember-flipflop-0.mp3",
+      "hash": "ad3eca7c53935b6b",
+      "duration": 3.28,
+      "characters": 58,
+      "role": "host"
+    },
+    "memory/remember/flipflop/1": {
+      "file": "memory/remember-flipflop-1.mp3",
+      "hash": "28c3a60d94f329cb",
+      "duration": 12.24,
+      "characters": 186,
+      "role": "host"
+    },
+    "memory/remember/flipflop/2": {
+      "file": "memory/remember-flipflop-2.mp3",
+      "hash": "e63cadf10e01fd06",
+      "duration": 9.44,
+      "characters": 156,
+      "role": "host"
+    },
+    "memory/cells/sram/0": {
+      "file": "memory/cells-sram-0.mp3",
+      "hash": "156946c174e52c37",
+      "duration": 5.36,
+      "characters": 89,
+      "role": "host"
+    },
+    "memory/cells/sram/1": {
+      "file": "memory/cells-sram-1.mp3",
+      "hash": "b7318a2ffc9ac186",
+      "duration": 6.24,
+      "characters": 110,
+      "role": "host"
+    },
+    "memory/cells/sram/2": {
+      "file": "memory/cells-sram-2.mp3",
+      "hash": "cf4b6559bdbf3f87",
+      "duration": 11.6,
+      "characters": 161,
+      "role": "host"
+    },
+    "memory/cells/dram/0": {
+      "file": "memory/cells-dram-0.mp3",
+      "hash": "e06a5ee920e88593",
+      "duration": 1.68,
+      "characters": 29,
+      "role": "host"
+    },
+    "memory/cells/dram/1": {
+      "file": "memory/cells-dram-1.mp3",
+      "hash": "29b386ca787daf16",
+      "duration": 11.2,
+      "characters": 156,
+      "role": "host"
+    },
+    "memory/cells/dram/2": {
+      "file": "memory/cells-dram-2.mp3",
+      "hash": "a4d454ae553ceaab",
+      "duration": 18.56,
+      "characters": 272,
+      "role": "host"
+    },
+    "memory/cells/dram/3": {
+      "file": "memory/cells-dram-3.mp3",
+      "hash": "58f29fd92e5154e8",
+      "duration": 10.24,
+      "characters": 139,
+      "role": "host"
+    },
+    "memory/cells/dram/4": {
+      "file": "memory/cells-dram-4.mp3",
+      "hash": "57f1746aed558ec6",
+      "duration": 13.04,
+      "characters": 213,
+      "role": "host"
+    },
+    "memory/cells/dram/5": {
+      "file": "memory/cells-dram-5.mp3",
+      "hash": "53b5235f4c5042fa",
+      "duration": 2.16,
+      "characters": 47,
+      "role": "host"
+    },
+    "memory/cells/dram/6": {
+      "file": "memory/cells-dram-6.mp3",
+      "hash": "c9d8d0e723d49e94",
+      "duration": 6.88,
+      "characters": 112,
+      "role": "host"
+    },
+    "memory/cells/array/0": {
+      "file": "memory/cells-array-0.mp3",
+      "hash": "c5138c615d7649e5",
+      "duration": 3.84,
+      "characters": 57,
+      "role": "host"
+    },
+    "memory/cells/array/1": {
+      "file": "memory/cells-array-1.mp3",
+      "hash": "b8723ee3caaa6af3",
+      "duration": 5.52,
+      "characters": 84,
+      "role": "host"
+    },
+    "memory/cells/array/2": {
+      "file": "memory/cells-array-2.mp3",
+      "hash": "8e8c11ff6b9ec224",
+      "duration": 6.24,
+      "characters": 105,
+      "role": "host"
+    },
+    "memory/cells/array/3": {
+      "file": "memory/cells-array-3.mp3",
+      "hash": "0aa683388a9cbe5a",
+      "duration": 9.68,
+      "characters": 153,
+      "role": "host"
+    },
+    "memory/ladder/ladder/0": {
+      "file": "memory/ladder-ladder-0.mp3",
+      "hash": "456815d5fc7b7e2d",
+      "duration": 3.44,
+      "characters": 57,
+      "role": "host"
+    },
+    "memory/ladder/ladder/1": {
+      "file": "memory/ladder-ladder-1.mp3",
+      "hash": "036e2367f76dc205",
+      "duration": 7.92,
+      "characters": 115,
+      "role": "host"
+    },
+    "memory/ladder/ladder/2": {
+      "file": "memory/ladder-ladder-2.mp3",
+      "hash": "52aeec8bf7df8127",
+      "duration": 8.8,
+      "characters": 155,
+      "role": "host"
+    },
+    "memory/ladder/ladder/3": {
+      "file": "memory/ladder-ladder-3.mp3",
+      "hash": "8856b35176272784",
+      "duration": 12,
+      "characters": 164,
+      "role": "host"
+    },
+    "memory/ladder/ladder/4": {
+      "file": "memory/ladder-ladder-4.mp3",
+      "hash": "245c41a2af757079",
+      "duration": 14.08,
+      "characters": 230,
+      "role": "host"
+    },
+    "memory/ladder/l1/0": {
+      "file": "memory/ladder-l1-0.mp3",
+      "hash": "b7e99e5f5268fa8e",
+      "duration": 3.68,
+      "characters": 61,
+      "role": "host"
+    },
+    "memory/ladder/l1/1": {
+      "file": "memory/ladder-l1-1.mp3",
+      "hash": "f19dfa9080336680",
+      "duration": 7.52,
+      "characters": 127,
+      "role": "host"
+    },
+    "memory/ladder/l1/2": {
+      "file": "memory/ladder-l1-2.mp3",
+      "hash": "5e36ca8d0f100f23",
+      "duration": 14.16,
+      "characters": 232,
+      "role": "host"
+    },
+    "memory/ladder/ram/0": {
+      "file": "memory/ladder-ram-0.mp3",
+      "hash": "ef75e95cffd893f8",
+      "duration": 2.8,
+      "characters": 47,
+      "role": "host"
+    },
+    "memory/ladder/ram/1": {
+      "file": "memory/ladder-ram-1.mp3",
+      "hash": "8475614102cb356a",
+      "duration": 9.6,
+      "characters": 144,
+      "role": "host"
+    },
+    "memory/ladder/ram/2": {
+      "file": "memory/ladder-ram-2.mp3",
+      "hash": "b173841622d05e9e",
+      "duration": 11.04,
+      "characters": 178,
+      "role": "host"
+    },
+    "memory/ladder/hbm/0": {
+      "file": "memory/ladder-hbm-0.mp3",
+      "hash": "9543d56bbdacd946",
+      "duration": 3.36,
+      "characters": 46,
+      "role": "host"
+    },
+    "memory/ladder/hbm/1": {
+      "file": "memory/ladder-hbm-1.mp3",
+      "hash": "fe80c0ff192c9acb",
+      "duration": 18.72,
+      "characters": 303,
+      "role": "host"
+    },
+    "memory/ladder/hbm/2": {
+      "file": "memory/ladder-hbm-2.mp3",
+      "hash": "92d233a51c95a3fc",
+      "duration": 14.08,
+      "characters": 188,
+      "role": "host"
+    },
+    "memory/ladder/unified/0": {
+      "file": "memory/ladder-unified-0.mp3",
+      "hash": "31f402d72e96ff7e",
+      "duration": 6.72,
+      "characters": 122,
+      "role": "host"
+    },
+    "memory/ladder/unified/1": {
+      "file": "memory/ladder-unified-1.mp3",
+      "hash": "7ac5a0aef4131db0",
+      "duration": 3.52,
+      "characters": 65,
+      "role": "host"
+    },
+    "memory/ladder/unified/2": {
+      "file": "memory/ladder-unified-2.mp3",
+      "hash": "a1ae39ddccc9f7e4",
+      "duration": 4.64,
+      "characters": 82,
+      "role": "host"
+    },
+    "memory/ladder/unified/3": {
+      "file": "memory/ladder-unified-3.mp3",
+      "hash": "1fc9f49944ddacb4",
+      "duration": 5.44,
+      "characters": 92,
+      "role": "host"
+    },
+    "memory/keeping/ssd/0": {
+      "file": "memory/keeping-ssd-0.mp3",
+      "hash": "9c7ef79df661608b",
+      "duration": 4.56,
+      "characters": 69,
+      "role": "host"
+    },
+    "memory/keeping/ssd/1": {
+      "file": "memory/keeping-ssd-1.mp3",
+      "hash": "dc47929d4c35e20d",
+      "duration": 13.76,
+      "characters": 214,
+      "role": "host"
+    },
+    "memory/keeping/ssd/2": {
+      "file": "memory/keeping-ssd-2.mp3",
+      "hash": "be4f4f98721d4023",
+      "duration": 10.56,
+      "characters": 169,
+      "role": "host"
+    },
+    "memory/keeping/wear/0": {
+      "file": "memory/keeping-wear-0.mp3",
+      "hash": "d4e207639ec10fd8",
+      "duration": 3.84,
+      "characters": 56,
+      "role": "host"
+    },
+    "memory/keeping/wear/1": {
+      "file": "memory/keeping-wear-1.mp3",
+      "hash": "0ffb2e4ca6aee1f8",
+      "duration": 12,
+      "characters": 183,
+      "role": "host"
+    },
+    "memory/keeping/wear/2": {
+      "file": "memory/keeping-wear-2.mp3",
+      "hash": "fa4058869c07a72d",
+      "duration": 10,
+      "characters": 160,
+      "role": "host"
+    },
+    "memory/keeping/wear/3": {
+      "file": "memory/keeping-wear-3.mp3",
+      "hash": "1aa40843a620af09",
+      "duration": 12.32,
+      "characters": 182,
+      "role": "host"
+    },
+    "memory/keeping/whole/0": {
+      "file": "memory/keeping-whole-0.mp3",
+      "hash": "58668325be012682",
+      "duration": 5.2,
+      "characters": 89,
+      "role": "host"
+    },
+    "memory/keeping/whole/1": {
+      "file": "memory/keeping-whole-1.mp3",
+      "hash": "fd20cde463221ac7",
+      "duration": 15.52,
+      "characters": 200,
+      "role": "host"
+    },
+    "memory/keeping/whole/2": {
+      "file": "memory/keeping-whole-2.mp3",
+      "hash": "4820c7f574e805f8",
+      "duration": 4.4,
+      "characters": 72,
+      "role": "host"
+    },
+    "memory/keeping/whole/3": {
+      "file": "memory/keeping-whole-3.mp3",
+      "hash": "e0dc1414fe0fa739",
+      "duration": 10.88,
+      "characters": 173,
+      "role": "host"
+    },
+    "time/clock/clock/0": {
+      "file": "time/clock-clock-0.mp3",
+      "hash": "b2d7463574160aa1",
+      "duration": 7.84,
+      "characters": 101,
+      "role": "host"
+    },
+    "time/clock/clock/1": {
+      "file": "time/clock-clock-1.mp3",
+      "hash": "819a72c956894c63",
+      "duration": 12.8,
+      "characters": 180,
+      "role": "host"
+    },
+    "time/clock/clock/2": {
+      "file": "time/clock-clock-2.mp3",
+      "hash": "a9aafbcb1b379d81",
+      "duration": 9.76,
+      "characters": 162,
+      "role": "host"
+    },
+    "time/clock/clock/3": {
+      "file": "time/clock-clock-3.mp3",
+      "hash": "abd4dba21b7548ec",
+      "duration": 21.12,
+      "characters": 306,
+      "role": "host"
+    },
+    "time/clock/stages/0": {
+      "file": "time/clock-stages-0.mp3",
+      "hash": "c8acd8e6b8f5fb27",
+      "duration": 3.28,
+      "characters": 51,
+      "role": "host"
+    },
+    "time/clock/stages/1": {
+      "file": "time/clock-stages-1.mp3",
+      "hash": "306615e94c098848",
+      "duration": 12,
+      "characters": 152,
+      "role": "host"
+    },
+    "time/clock/stages/2": {
+      "file": "time/clock-stages-2.mp3",
+      "hash": "a380f77ce9917a53",
+      "duration": 13.04,
+      "characters": 193,
+      "role": "host"
+    },
+    "time/pipelining/overlap/0": {
+      "file": "time/pipelining-overlap-0.mp3",
+      "hash": "6925eb6e4fd520fb",
+      "duration": 5.36,
+      "characters": 77,
+      "role": "host"
+    },
+    "time/pipelining/overlap/1": {
+      "file": "time/pipelining-overlap-1.mp3",
+      "hash": "e397f101dfc09a7e",
+      "duration": 10.08,
+      "characters": 148,
+      "role": "host"
+    },
+    "time/pipelining/overlap/2": {
+      "file": "time/pipelining-overlap-2.mp3",
+      "hash": "7392ff6a51705a4b",
+      "duration": 18.32,
+      "characters": 270,
+      "role": "host"
+    },
+    "time/pipelining/overlap/3": {
+      "file": "time/pipelining-overlap-3.mp3",
+      "hash": "f44ac33d1d24869d",
+      "duration": 17.6,
+      "characters": 269,
+      "role": "host"
+    },
+    "time/pipelining/hazard/0": {
+      "file": "time/pipelining-hazard-0.mp3",
+      "hash": "e68b925802679dd1",
+      "duration": 1.2,
+      "characters": 14,
+      "role": "host"
+    },
+    "time/pipelining/hazard/1": {
+      "file": "time/pipelining-hazard-1.mp3",
+      "hash": "92291afdd6e94ac3",
+      "duration": 6.72,
+      "characters": 105,
+      "role": "host"
+    },
+    "time/pipelining/hazard/2": {
+      "file": "time/pipelining-hazard-2.mp3",
+      "hash": "1a513ee0c8afc38c",
+      "duration": 17.92,
+      "characters": 266,
+      "role": "host"
+    },
+    "time/pipelining/branch/0": {
+      "file": "time/pipelining-branch-0.mp3",
+      "hash": "4111be977890f353",
+      "duration": 2.8,
+      "characters": 41,
+      "role": "host"
+    },
+    "time/pipelining/branch/1": {
+      "file": "time/pipelining-branch-1.mp3",
+      "hash": "6e525255e3aa3192",
+      "duration": 8.16,
+      "characters": 131,
+      "role": "host"
+    },
+    "time/pipelining/branch/2": {
+      "file": "time/pipelining-branch-2.mp3",
+      "hash": "d45ceaf42c302f85",
+      "duration": 10.32,
+      "characters": 150,
+      "role": "host"
+    },
+    "time/guessing/speculation/0": {
+      "file": "time/guessing-speculation-0.mp3",
+      "hash": "e234342a11532bfb",
+      "duration": 1.52,
+      "characters": 20,
+      "role": "host"
+    },
+    "time/guessing/speculation/1": {
+      "file": "time/guessing-speculation-1.mp3",
+      "hash": "f5ddb744ecfc4735",
+      "duration": 12.72,
+      "characters": 180,
+      "role": "host"
+    },
+    "time/guessing/speculation/2": {
+      "file": "time/guessing-speculation-2.mp3",
+      "hash": "eb1674145291d9d2",
+      "duration": 12.88,
+      "characters": 177,
+      "role": "host"
+    },
+    "time/guessing/speculation/3": {
+      "file": "time/guessing-speculation-3.mp3",
+      "hash": "0a47986315de3c2c",
+      "duration": 27.36,
+      "characters": 355,
+      "role": "host"
+    },
+    "time/guessing/depth/0": {
+      "file": "time/guessing-depth-0.mp3",
+      "hash": "888e00f6aec45e37",
+      "duration": 4.48,
+      "characters": 65,
+      "role": "host"
+    },
+    "time/guessing/depth/1": {
+      "file": "time/guessing-depth-1.mp3",
+      "hash": "296565aa5f1af07d",
+      "duration": 9.52,
+      "characters": 136,
+      "role": "host"
+    },
+    "time/guessing/depth/2": {
+      "file": "time/guessing-depth-2.mp3",
+      "hash": "8d51bc7d4572843c",
+      "duration": 13.28,
+      "characters": 206,
+      "role": "host"
+    },
+    "time/wall/wall/0": {
+      "file": "time/wall-wall-0.mp3",
+      "hash": "9c07f65f2c27ffd8",
+      "duration": 2.4,
+      "characters": 33,
+      "role": "host"
+    },
+    "time/wall/wall/1": {
+      "file": "time/wall-wall-1.mp3",
+      "hash": "259f415055c58d5e",
+      "duration": 18.96,
+      "characters": 249,
+      "role": "host"
+    },
+    "time/wall/wall/2": {
+      "file": "time/wall-wall-2.mp3",
+      "hash": "30109ed87d01bae9",
+      "duration": 11.28,
+      "characters": 156,
+      "role": "host"
+    },
+    "time/wall/wall/3": {
+      "file": "time/wall-wall-3.mp3",
+      "hash": "a2530fbac47b8409",
+      "duration": 26.88,
+      "characters": 398,
+      "role": "host"
+    },
+    "time/wall/cores/0": {
+      "file": "time/wall-cores-0.mp3",
+      "hash": "104ea70e47c34668",
+      "duration": 3.52,
+      "characters": 41,
+      "role": "host"
+    },
+    "time/wall/cores/1": {
+      "file": "time/wall-cores-1.mp3",
+      "hash": "af0ae40ad1e8e2d7",
+      "duration": 20.8,
+      "characters": 319,
+      "role": "host"
+    },
+    "time/wall/cores/2": {
+      "file": "time/wall-cores-2.mp3",
+      "hash": "563bef29b9ad14ee",
+      "duration": 6.08,
+      "characters": 90,
+      "role": "host"
+    },
+    "time/wall/cores/3": {
+      "file": "time/wall-cores-3.mp3",
+      "hash": "1f583aabc22e49a2",
+      "duration": 15.2,
+      "characters": 217,
+      "role": "host"
+    },
+    "time/wall/cores/4": {
+      "file": "time/wall-cores-4.mp3",
+      "hash": "8a823cd0122e296b",
+      "duration": 8.96,
+      "characters": 144,
+      "role": "host"
+    },
+    "fab/wafer/wafer/0": {
+      "file": "fab/wafer-wafer-0.mp3",
+      "hash": "87ad54cb325dd400",
+      "duration": 5.28,
+      "characters": 99,
+      "role": "host"
+    },
+    "fab/wafer/wafer/1": {
+      "file": "fab/wafer-wafer-1.mp3",
+      "hash": "88e82ee22cb64639",
+      "duration": 14.48,
+      "characters": 223,
+      "role": "host"
+    },
+    "fab/wafer/wafer/2": {
+      "file": "fab/wafer-wafer-2.mp3",
+      "hash": "0abf36b50457859d",
+      "duration": 7.92,
+      "characters": 152,
+      "role": "host"
+    },
+    "fab/wafer/dies/0": {
+      "file": "fab/wafer-dies-0.mp3",
+      "hash": "e9471da49972e101",
+      "duration": 4.48,
+      "characters": 64,
+      "role": "host"
+    },
+    "fab/wafer/dies/1": {
+      "file": "fab/wafer-dies-1.mp3",
+      "hash": "c01aa21aca85237d",
+      "duration": 4.72,
+      "characters": 79,
+      "role": "host"
+    },
+    "fab/wafer/dies/2": {
+      "file": "fab/wafer-dies-2.mp3",
+      "hash": "455518f09d36e837",
+      "duration": 10.96,
+      "characters": 207,
+      "role": "host"
+    },
+    "fab/printing/expose/0": {
+      "file": "fab/printing-expose-0.mp3",
+      "hash": "d001b51ea0f506ff",
+      "duration": 3.68,
+      "characters": 61,
+      "role": "host"
+    },
+    "fab/printing/expose/1": {
+      "file": "fab/printing-expose-1.mp3",
+      "hash": "285d4554328539fe",
+      "duration": 13.2,
+      "characters": 231,
+      "role": "host"
+    },
+    "fab/printing/expose/2": {
+      "file": "fab/printing-expose-2.mp3",
+      "hash": "09863c35d39cba6d",
+      "duration": 12.32,
+      "characters": 222,
+      "role": "host"
+    },
+    "fab/printing/stepper/0": {
+      "file": "fab/printing-stepper-0.mp3",
+      "hash": "592ee8d7e246c17a",
+      "duration": 3.52,
+      "characters": 55,
+      "role": "host"
+    },
+    "fab/printing/stepper/1": {
+      "file": "fab/printing-stepper-1.mp3",
+      "hash": "b3282b329ad42ed7",
+      "duration": 10.4,
+      "characters": 138,
+      "role": "host"
+    },
+    "fab/printing/stepper/2": {
+      "file": "fab/printing-stepper-2.mp3",
+      "hash": "594b7ac6b689e5b1",
+      "duration": 7.2,
+      "characters": 140,
+      "role": "host"
+    },
+    "fab/printing/euv/0": {
+      "file": "fab/printing-euv-0.mp3",
+      "hash": "3d7ba111441b580c",
+      "duration": 2.8,
+      "characters": 55,
+      "role": "host"
+    },
+    "fab/printing/euv/1": {
+      "file": "fab/printing-euv-1.mp3",
+      "hash": "97335a14ea48bf6a",
+      "duration": 12.56,
+      "characters": 232,
+      "role": "host"
+    },
+    "fab/printing/euv/2": {
+      "file": "fab/printing-euv-2.mp3",
+      "hash": "5bd5fc35260722f3",
+      "duration": 9.2,
+      "characters": 160,
+      "role": "host"
+    },
+    "fab/printing/euv/3": {
+      "file": "fab/printing-euv-3.mp3",
+      "hash": "b2c83d3540a1404e",
+      "duration": 9.12,
+      "characters": 178,
+      "role": "host"
+    },
+    "fab/printing/euv/4": {
+      "file": "fab/printing-euv-4.mp3",
+      "hash": "fe7b62f3780b5643",
+      "duration": 2.8,
+      "characters": 55,
+      "role": "host"
+    },
+    "fab/printing/euv/5": {
+      "file": "fab/printing-euv-5.mp3",
+      "hash": "393b06e99324b1d0",
+      "duration": 12.48,
+      "characters": 187,
+      "role": "host"
+    },
+    "fab/printing/euv/6": {
+      "file": "fab/printing-euv-6.mp3",
+      "hash": "7978df9ecdc3905e",
+      "duration": 15.2,
+      "characters": 252,
+      "role": "host"
+    },
+    "fab/layers/layers/0": {
+      "file": "fab/layers-layers-0.mp3",
+      "hash": "fdb3e5218671d50c",
+      "duration": 1.92,
+      "characters": 33,
+      "role": "host"
+    },
+    "fab/layers/layers/1": {
+      "file": "fab/layers-layers-1.mp3",
+      "hash": "89755e36709b3758",
+      "duration": 9.2,
+      "characters": 153,
+      "role": "host"
+    },
+    "fab/layers/layers/2": {
+      "file": "fab/layers-layers-2.mp3",
+      "hash": "14c9bfbfd4bc32f6",
+      "duration": 12.48,
+      "characters": 234,
+      "role": "host"
+    },
+    "fab/layers/layers/3": {
+      "file": "fab/layers-layers-3.mp3",
+      "hash": "0ae30bc59e57f76f",
+      "duration": 11.44,
+      "characters": 211,
+      "role": "host"
+    },
+    "fab/yield/yield/0": {
+      "file": "fab/yield-yield-0.mp3",
+      "hash": "d09946875c3adb70",
+      "duration": 2,
+      "characters": 36,
+      "role": "host"
+    },
+    "fab/yield/yield/1": {
+      "file": "fab/yield-yield-1.mp3",
+      "hash": "a1a3c16bf62bb9a9",
+      "duration": 8.32,
+      "characters": 119,
+      "role": "host"
+    },
+    "fab/yield/yield/2": {
+      "file": "fab/yield-yield-2.mp3",
+      "hash": "d9a3b439aba88df9",
+      "duration": 7.44,
+      "characters": 169,
+      "role": "host"
+    },
+    "fab/yield/yield/3": {
+      "file": "fab/yield-yield-3.mp3",
+      "hash": "1fda0c80fcac520d",
+      "duration": 20.48,
+      "characters": 328,
+      "role": "host"
+    },
+    "fab/yield/bins/0": {
+      "file": "fab/yield-bins-0.mp3",
+      "hash": "f51d5d27fe1b628f",
+      "duration": 2.72,
+      "characters": 48,
+      "role": "host"
+    },
+    "fab/yield/bins/1": {
+      "file": "fab/yield-bins-1.mp3",
+      "hash": "cf18f81b0ebc7f3e",
+      "duration": 9.28,
+      "characters": 145,
+      "role": "host"
+    },
+    "fab/yield/bins/2": {
+      "file": "fab/yield-bins-2.mp3",
+      "hash": "41623096cefb0f4a",
+      "duration": 10.48,
+      "characters": 172,
+      "role": "host"
+    },
+    "fab/yield/bins/3": {
+      "file": "fab/yield-bins-3.mp3",
+      "hash": "7341cd71500734b4",
+      "duration": 6.16,
+      "characters": 114,
+      "role": "host"
+    },
+    "fab/yield/node/0": {
+      "file": "fab/yield-node-0.mp3",
+      "hash": "5783b05134403767",
+      "duration": 2.72,
+      "characters": 44,
+      "role": "host"
+    },
+    "fab/yield/node/1": {
+      "file": "fab/yield-node-1.mp3",
+      "hash": "552e6b2f9d3857cb",
+      "duration": 17.12,
+      "characters": 287,
+      "role": "host"
+    },
+    "fab/yield/node/2": {
+      "file": "fab/yield-node-2.mp3",
+      "hash": "cab3f11732d2b1bc",
+      "duration": 17.36,
+      "characters": 271,
+      "role": "host"
+    },
+    "fab/yield/node/3": {
+      "file": "fab/yield-node-3.mp3",
+      "hash": "418f766470dbebc4",
+      "duration": 12.72,
+      "characters": 216,
+      "role": "host"
+    },
+    "fab/yield/node/4": {
+      "file": "fab/yield-node-4.mp3",
+      "hash": "d70e23494e2ed05b",
+      "duration": 4.4,
+      "characters": 98,
+      "role": "host"
+    },
+    "board/board/whole/0": {
+      "file": "board/board-whole-0.mp3",
+      "hash": "82daca11847e7d9a",
+      "duration": 7.36,
+      "characters": 104,
+      "role": "host"
+    },
+    "board/board/whole/1": {
+      "file": "board/board-whole-1.mp3",
+      "hash": "ad36983ee5c93fbc",
+      "duration": 16.4,
+      "characters": 200,
+      "role": "host"
+    },
+    "board/board/whole/2": {
+      "file": "board/board-whole-2.mp3",
+      "hash": "f0c40564e1822bbc",
+      "duration": 9.28,
+      "characters": 140,
+      "role": "host"
+    },
+    "board/board/pcb/0": {
+      "file": "board/board-pcb-0.mp3",
+      "hash": "3c205d97a52db957",
+      "duration": 3.6,
+      "characters": 58,
+      "role": "host"
+    },
+    "board/board/pcb/1": {
+      "file": "board/board-pcb-1.mp3",
+      "hash": "a99d5db1e3c88f28",
+      "duration": 10.88,
+      "characters": 153,
+      "role": "host"
+    },
+    "board/board/pcb/2": {
+      "file": "board/board-pcb-2.mp3",
+      "hash": "414c0dcdb9317ec7",
+      "duration": 12.88,
+      "characters": 218,
+      "role": "host"
+    },
+    "board/board/pcb/3": {
+      "file": "board/board-pcb-3.mp3",
+      "hash": "8f242e54b4d2f613",
+      "duration": 10.56,
+      "characters": 158,
+      "role": "host"
+    },
+    "board/board/traces/0": {
+      "file": "board/board-traces-0.mp3",
+      "hash": "f0b0c682f3e12155",
+      "duration": 6,
+      "characters": 73,
+      "role": "host"
+    },
+    "board/board/traces/1": {
+      "file": "board/board-traces-1.mp3",
+      "hash": "f72b6f5b4025002d",
+      "duration": 9.36,
+      "characters": 138,
+      "role": "host"
+    },
+    "board/board/traces/2": {
+      "file": "board/board-traces-2.mp3",
+      "hash": "89fc0199bbdfb04d",
+      "duration": 12.64,
+      "characters": 198,
+      "role": "host"
+    },
+    "board/board/traces/3": {
+      "file": "board/board-traces-3.mp3",
+      "hash": "1f8da6a3848d90ce",
+      "duration": 24.08,
+      "characters": 355,
+      "role": "host"
+    },
+    "board/board/exploded/0": {
+      "file": "board/board-exploded-0.mp3",
+      "hash": "ba5da3f3c869c6a0",
+      "duration": 7.12,
+      "characters": 77,
+      "role": "host"
+    },
+    "board/board/exploded/1": {
+      "file": "board/board-exploded-1.mp3",
+      "hash": "7b455f7cc89b60a0",
+      "duration": 3.36,
+      "characters": 73,
+      "role": "host"
+    },
+    "board/board/exploded/2": {
+      "file": "board/board-exploded-2.mp3",
+      "hash": "420a2e45805f61dc",
+      "duration": 8.64,
+      "characters": 139,
+      "role": "host"
+    },
+    "board/power/battery/0": {
+      "file": "board/power-battery-0.mp3",
+      "hash": "4a7004b6e6cc6cb3",
+      "duration": 7.6,
+      "characters": 85,
+      "role": "host"
+    },
+    "board/power/battery/1": {
+      "file": "board/power-battery-1.mp3",
+      "hash": "5d98cb686da58012",
+      "duration": 9.12,
+      "characters": 112,
+      "role": "host"
+    },
+    "board/power/battery/2": {
+      "file": "board/power-battery-2.mp3",
+      "hash": "1b04d521bb794261",
+      "duration": 10.32,
+      "characters": 177,
+      "role": "host"
+    },
+    "board/power/vrm/0": {
+      "file": "board/power-vrm-0.mp3",
+      "hash": "37a4cdfbade80d79",
+      "duration": 2.96,
+      "characters": 44,
+      "role": "host"
+    },
+    "board/power/vrm/1": {
+      "file": "board/power-vrm-1.mp3",
+      "hash": "8c3f7d50eda6b3f4",
+      "duration": 11.12,
+      "characters": 148,
+      "role": "host"
+    },
+    "board/power/vrm/2": {
+      "file": "board/power-vrm-2.mp3",
+      "hash": "040f65123a473d8c",
+      "duration": 15.52,
+      "characters": 220,
+      "role": "host"
+    },
+    "board/power/vrm/3": {
+      "file": "board/power-vrm-3.mp3",
+      "hash": "d6ccc653d762e302",
+      "duration": 13.52,
+      "characters": 211,
+      "role": "host"
+    },
+    "board/power/rails/0": {
+      "file": "board/power-rails-0.mp3",
+      "hash": "8efb9addfea85833",
+      "duration": 2.16,
+      "characters": 36,
+      "role": "host"
+    },
+    "board/power/rails/1": {
+      "file": "board/power-rails-1.mp3",
+      "hash": "36249453b5ea4e10",
+      "duration": 14.64,
+      "characters": 198,
+      "role": "host"
+    },
+    "board/power/rails/2": {
+      "file": "board/power-rails-2.mp3",
+      "hash": "d360c6f270cb34dd",
+      "duration": 14.96,
+      "characters": 237,
+      "role": "host"
+    },
+    "board/buses/ddr/0": {
+      "file": "board/buses-ddr-0.mp3",
+      "hash": "13c8b5d9f5097721",
+      "duration": 4,
+      "characters": 66,
+      "role": "host"
+    },
+    "board/buses/ddr/1": {
+      "file": "board/buses-ddr-1.mp3",
+      "hash": "230f71fe327d0713",
+      "duration": 20.24,
+      "characters": 286,
+      "role": "host"
+    },
+    "board/buses/ddr/2": {
+      "file": "board/buses-ddr-2.mp3",
+      "hash": "f993e0e8080817de",
+      "duration": 10.32,
+      "characters": 155,
+      "role": "host"
+    },
+    "board/buses/ddr/3": {
+      "file": "board/buses-ddr-3.mp3",
+      "hash": "d8cc6df78f4dc2a1",
+      "duration": 20.4,
+      "characters": 277,
+      "role": "host"
+    },
+    "board/buses/pcie/0": {
+      "file": "board/buses-pcie-0.mp3",
+      "hash": "f93ad9810534c1c6",
+      "duration": 1.68,
+      "characters": 24,
+      "role": "host"
+    },
+    "board/buses/pcie/1": {
+      "file": "board/buses-pcie-1.mp3",
+      "hash": "0576da8825d81083",
+      "duration": 19.68,
+      "characters": 254,
+      "role": "host"
+    },
+    "board/buses/pcie/2": {
+      "file": "board/buses-pcie-2.mp3",
+      "hash": "0d26681049290ee4",
+      "duration": 16.96,
+      "characters": 221,
+      "role": "host"
+    },
+    "board/buses/pcie/3": {
+      "file": "board/buses-pcie-3.mp3",
+      "hash": "ff746ae2103be2cb",
+      "duration": 7.44,
+      "characters": 98,
+      "role": "host"
+    },
+    "board/buses/usb/0": {
+      "file": "board/buses-usb-0.mp3",
+      "hash": "d5313be8277b12f8",
+      "duration": 3.2,
+      "characters": 56,
+      "role": "host"
+    },
+    "board/buses/usb/1": {
+      "file": "board/buses-usb-1.mp3",
+      "hash": "856234dc5037ac0c",
+      "duration": 7.68,
+      "characters": 98,
+      "role": "host"
+    },
+    "board/buses/usb/2": {
+      "file": "board/buses-usb-2.mp3",
+      "hash": "3151d7ee951a2ccf",
+      "duration": 21.52,
+      "characters": 327,
+      "role": "host"
+    },
+    "board/thermal/pipe/0": {
+      "file": "board/thermal-pipe-0.mp3",
+      "hash": "46d2b1df3fbc1094",
+      "duration": 4.64,
+      "characters": 69,
+      "role": "host"
+    },
+    "board/thermal/pipe/1": {
+      "file": "board/thermal-pipe-1.mp3",
+      "hash": "086fc6f443a4bc19",
+      "duration": 13.84,
+      "characters": 141,
+      "role": "host"
+    },
+    "board/thermal/pipe/2": {
+      "file": "board/thermal-pipe-2.mp3",
+      "hash": "bc8380fc9a4112aa",
+      "duration": 16.4,
+      "characters": 220,
+      "role": "host"
+    },
+    "board/thermal/fan/0": {
+      "file": "board/thermal-fan-0.mp3",
+      "hash": "86c975ceb4b0b189",
+      "duration": 6.88,
+      "characters": 102,
+      "role": "host"
+    },
+    "board/thermal/fan/1": {
+      "file": "board/thermal-fan-1.mp3",
+      "hash": "2cf54c6db072f80c",
+      "duration": 5.44,
+      "characters": 93,
+      "role": "host"
+    },
+    "board/thermal/fan/2": {
+      "file": "board/thermal-fan-2.mp3",
+      "hash": "2ff5b4e2f5da2b8b",
+      "duration": 10.24,
+      "characters": 139,
+      "role": "host"
+    },
+    "board/thermal/fan/3": {
+      "file": "board/thermal-fan-3.mp3",
+      "hash": "90b80a94379e133c",
+      "duration": 15.76,
+      "characters": 235,
+      "role": "host"
+    },
+    "board/thermal/budget/0": {
+      "file": "board/thermal-budget-0.mp3",
+      "hash": "435b93b226647eb8",
+      "duration": 1.36,
+      "characters": 22,
+      "role": "host"
+    },
+    "board/thermal/budget/1": {
+      "file": "board/thermal-budget-1.mp3",
+      "hash": "711195fd756f07ce",
+      "duration": 16.48,
+      "characters": 209,
+      "role": "host"
+    },
+    "board/thermal/budget/2": {
+      "file": "board/thermal-budget-2.mp3",
+      "hash": "a4f98b896d31267e",
+      "duration": 12.64,
+      "characters": 206,
+      "role": "host"
+    },
+    "board/thermal/budget/3": {
+      "file": "board/thermal-budget-3.mp3",
+      "hash": "f6b54640621df435",
+      "duration": 7.04,
+      "characters": 107,
+      "role": "host"
+    },
+    "io/interrupts/polling/0": {
+      "file": "io/interrupts-polling-0.mp3",
+      "hash": "e778cd9de02aea78",
+      "duration": 8.96,
+      "characters": 126,
+      "role": "host"
+    },
+    "io/interrupts/polling/1": {
+      "file": "io/interrupts-polling-1.mp3",
+      "hash": "a0c00f86137a374f",
+      "duration": 7.28,
+      "characters": 130,
+      "role": "host"
+    },
+    "io/interrupts/polling/2": {
+      "file": "io/interrupts-polling-2.mp3",
+      "hash": "4d19da8c6ea58339",
+      "duration": 11.68,
+      "characters": 198,
+      "role": "host"
+    },
+    "io/interrupts/interrupt/0": {
+      "file": "io/interrupts-interrupt-0.mp3",
+      "hash": "ec82b963f35d6e51",
+      "duration": 5.76,
+      "characters": 66,
+      "role": "host"
+    },
+    "io/interrupts/interrupt/1": {
+      "file": "io/interrupts-interrupt-1.mp3",
+      "hash": "dd69e2c6be71f67f",
+      "duration": 6.48,
+      "characters": 124,
+      "role": "host"
+    },
+    "io/interrupts/interrupt/2": {
+      "file": "io/interrupts-interrupt-2.mp3",
+      "hash": "a8f7054a728898d0",
+      "duration": 13.2,
+      "characters": 199,
+      "role": "host"
+    },
+    "io/interrupts/interrupt/3": {
+      "file": "io/interrupts-interrupt-3.mp3",
+      "hash": "78c83c171d68f5e1",
+      "duration": 18.56,
+      "characters": 313,
+      "role": "host"
+    },
+    "io/interrupts/cost/0": {
+      "file": "io/interrupts-cost-0.mp3",
+      "hash": "299e600b7823ba3c",
+      "duration": 2.8,
+      "characters": 42,
+      "role": "host"
+    },
+    "io/interrupts/cost/1": {
+      "file": "io/interrupts-cost-1.mp3",
+      "hash": "30519f17cba9035b",
+      "duration": 6.08,
+      "characters": 75,
+      "role": "host"
+    },
+    "io/interrupts/cost/2": {
+      "file": "io/interrupts-cost-2.mp3",
+      "hash": "d00fef581be46d4b",
+      "duration": 11.04,
+      "characters": 196,
+      "role": "host"
+    },
+    "io/interrupts/cost/3": {
+      "file": "io/interrupts-cost-3.mp3",
+      "hash": "f6a3c541ed4a98b6",
+      "duration": 11.04,
+      "characters": 186,
+      "role": "host"
+    },
+    "io/dma/dma/0": {
+      "file": "io/dma-dma-0.mp3",
+      "hash": "6249343cfff12632",
+      "duration": 3.28,
+      "characters": 66,
+      "role": "host"
+    },
+    "io/dma/dma/1": {
+      "file": "io/dma-dma-1.mp3",
+      "hash": "eb1e8d9f420b4bbe",
+      "duration": 12.64,
+      "characters": 228,
+      "role": "host"
+    },
+    "io/dma/dma/2": {
+      "file": "io/dma-dma-2.mp3",
+      "hash": "2b10ba7755405672",
+      "duration": 12.72,
+      "characters": 202,
+      "role": "host"
+    },
+    "io/dma/together/0": {
+      "file": "io/dma-together-0.mp3",
+      "hash": "98dae830a56312b1",
+      "duration": 2.24,
+      "characters": 43,
+      "role": "host"
+    },
+    "io/dma/together/1": {
+      "file": "io/dma-together-1.mp3",
+      "hash": "6bf234b6ad7c7d1b",
+      "duration": 6.8,
+      "characters": 125,
+      "role": "host"
+    },
+    "io/dma/together/2": {
+      "file": "io/dma-together-2.mp3",
+      "hash": "7405cdf4031a6974",
+      "duration": 8.4,
+      "characters": 125,
+      "role": "host"
+    },
+    "io/world/analogue/0": {
+      "file": "io/world-analogue-0.mp3",
+      "hash": "b9b58f4cdb62f208",
+      "duration": 4,
+      "characters": 59,
+      "role": "host"
+    },
+    "io/world/analogue/1": {
+      "file": "io/world-analogue-1.mp3",
+      "hash": "58d9796d18c1eb6f",
+      "duration": 13.2,
+      "characters": 193,
+      "role": "host"
+    },
+    "io/world/analogue/2": {
+      "file": "io/world-analogue-2.mp3",
+      "hash": "be3214237673d7fa",
+      "duration": 10,
+      "characters": 183,
+      "role": "host"
+    },
+    "io/world/display/0": {
+      "file": "io/world-display-0.mp3",
+      "hash": "afb28dbc1451db92",
+      "duration": 2,
+      "characters": 23,
+      "role": "host"
+    },
+    "io/world/display/1": {
+      "file": "io/world-display-1.mp3",
+      "hash": "14e4975dff3de189",
+      "duration": 12.8,
+      "characters": 208,
+      "role": "host"
+    },
+    "io/world/display/2": {
+      "file": "io/world-display-2.mp3",
+      "hash": "7b425e31623f25aa",
+      "duration": 12.08,
+      "characters": 201,
+      "role": "host"
+    },
+    "io/world/display/3": {
+      "file": "io/world-display-3.mp3",
+      "hash": "396b56a991e8e9e5",
+      "duration": 10.24,
+      "characters": 179,
+      "role": "host"
+    },
+    "io/world/network/0": {
+      "file": "io/world-network-0.mp3",
+      "hash": "f9fce61bed629d09",
+      "duration": 2.24,
+      "characters": 31,
+      "role": "host"
+    },
+    "io/world/network/1": {
+      "file": "io/world-network-1.mp3",
+      "hash": "6298cde141316474",
+      "duration": 10.24,
+      "characters": 155,
+      "role": "host"
+    },
+    "io/world/network/2": {
+      "file": "io/world-network-2.mp3",
+      "hash": "12dd554d6110db38",
+      "duration": 12.32,
+      "characters": 206,
+      "role": "host"
+    },
+    "io/world/network/3": {
+      "file": "io/world-network-3.mp3",
+      "hash": "ba9ce8f58a114232",
+      "duration": 14.32,
+      "characters": 269,
+      "role": "host"
+    },
+    "boot/cold/cold/0": {
+      "file": "boot/cold-cold-0.mp3",
+      "hash": "89b5617f7fea037d",
+      "duration": 5.36,
+      "characters": 65,
+      "role": "host"
+    },
+    "boot/cold/cold/1": {
+      "file": "boot/cold-cold-1.mp3",
+      "hash": "b29567dbd0490017",
+      "duration": 17.04,
+      "characters": 242,
+      "role": "host"
+    },
+    "boot/cold/cold/2": {
+      "file": "boot/cold-cold-2.mp3",
+      "hash": "d5a4d111d648f2e7",
+      "duration": 10.64,
+      "characters": 166,
+      "role": "host"
+    },
+    "boot/cold/rail/0": {
+      "file": "boot/cold-rail-0.mp3",
+      "hash": "e6dcbe65390a9c8b",
+      "duration": 3.28,
+      "characters": 47,
+      "role": "host"
+    },
+    "boot/cold/rail/1": {
+      "file": "boot/cold-rail-1.mp3",
+      "hash": "f7f4c99a5104c6c4",
+      "duration": 13.44,
+      "characters": 180,
+      "role": "host"
+    },
+    "boot/cold/rail/2": {
+      "file": "boot/cold-rail-2.mp3",
+      "hash": "787aad8b3354b792",
+      "duration": 10.96,
+      "characters": 164,
+      "role": "host"
+    },
+    "boot/cold/rail/3": {
+      "file": "boot/cold-rail-3.mp3",
+      "hash": "4d7a5819ca365da2",
+      "duration": 13.84,
+      "characters": 221,
+      "role": "host"
+    },
+    "boot/firmware/firmware/0": {
+      "file": "boot/firmware-firmware-0.mp3",
+      "hash": "985eec86d1cd8273",
+      "duration": 6.16,
+      "characters": 90,
+      "role": "host"
+    },
+    "boot/firmware/firmware/1": {
+      "file": "boot/firmware-firmware-1.mp3",
+      "hash": "9de566a42baed2d1",
+      "duration": 9.44,
+      "characters": 143,
+      "role": "host"
+    },
+    "boot/firmware/firmware/2": {
+      "file": "boot/firmware-firmware-2.mp3",
+      "hash": "5d2dc8baec6e3d69",
+      "duration": 11.92,
+      "characters": 204,
+      "role": "host"
+    },
+    "boot/firmware/post/0": {
+      "file": "boot/firmware-post-0.mp3",
+      "hash": "15cd0d34b2944c57",
+      "duration": 2.72,
+      "characters": 53,
+      "role": "host"
+    },
+    "boot/firmware/post/1": {
+      "file": "boot/firmware-post-1.mp3",
+      "hash": "39cd2bd08f151901",
+      "duration": 13.28,
+      "characters": 188,
+      "role": "host"
+    },
+    "boot/firmware/post/2": {
+      "file": "boot/firmware-post-2.mp3",
+      "hash": "e77fc9d8f1ef1d2d",
+      "duration": 8.88,
+      "characters": 143,
+      "role": "host"
+    },
+    "boot/firmware/find/0": {
+      "file": "boot/firmware-find-0.mp3",
+      "hash": "03733fb9125944f4",
+      "duration": 1.76,
+      "characters": 21,
+      "role": "host"
+    },
+    "boot/firmware/find/1": {
+      "file": "boot/firmware-find-1.mp3",
+      "hash": "2914d0b705dbb579",
+      "duration": 10.08,
+      "characters": 152,
+      "role": "host"
+    },
+    "boot/firmware/find/2": {
+      "file": "boot/firmware-find-2.mp3",
+      "hash": "de8c91849676defe",
+      "duration": 14.4,
+      "characters": 202,
+      "role": "host"
+    },
+    "boot/handoff/loader/0": {
+      "file": "boot/handoff-loader-0.mp3",
+      "hash": "21516e33f508ae89",
+      "duration": 2.4,
+      "characters": 37,
+      "role": "host"
+    },
+    "boot/handoff/loader/1": {
+      "file": "boot/handoff-loader-1.mp3",
+      "hash": "44edfc99cc172ba0",
+      "duration": 7.52,
+      "characters": 106,
+      "role": "host"
+    },
+    "boot/handoff/loader/2": {
+      "file": "boot/handoff-loader-2.mp3",
+      "hash": "cb78c9aba75c716c",
+      "duration": 18.16,
+      "characters": 288,
+      "role": "host"
+    },
+    "boot/handoff/kernel/0": {
+      "file": "boot/handoff-kernel-0.mp3",
+      "hash": "f869055d90aac876",
+      "duration": 8.56,
+      "characters": 124,
+      "role": "host"
+    },
+    "boot/handoff/kernel/1": {
+      "file": "boot/handoff-kernel-1.mp3",
+      "hash": "677992ae28344fc3",
+      "duration": 10.32,
+      "characters": 152,
+      "role": "host"
+    },
+    "boot/handoff/kernel/2": {
+      "file": "boot/handoff-kernel-2.mp3",
+      "hash": "c6bb34cae5b44001",
+      "duration": 12.32,
+      "characters": 171,
+      "role": "host"
+    },
+    "boot/handoff/done/0": {
+      "file": "boot/handoff-done-0.mp3",
+      "hash": "a7757c02bbc6fb79",
+      "duration": 2.72,
+      "characters": 34,
+      "role": "host"
+    },
+    "boot/handoff/done/1": {
+      "file": "boot/handoff-done-1.mp3",
+      "hash": "0e747c2206155323",
+      "duration": 14.8,
+      "characters": 204,
+      "role": "host"
+    },
+    "boot/handoff/done/2": {
+      "file": "boot/handoff-done-2.mp3",
+      "hash": "e8f355f0951ed568",
+      "duration": 16.72,
+      "characters": 226,
+      "role": "host"
+    },
+    "boot/handoff/done/3": {
+      "file": "boot/handoff-done-3.mp3",
+      "hash": "9b743c077b7d548f",
+      "duration": 12.16,
+      "characters": 183,
+      "role": "host"
+    },
+    "kernel/twoworlds/user/0": {
+      "file": "kernel/twoworlds-user-0.mp3",
+      "hash": "291eaac11f26ca1a",
+      "duration": 4.64,
+      "characters": 79,
+      "role": "host"
+    },
+    "kernel/twoworlds/user/1": {
+      "file": "kernel/twoworlds-user-1.mp3",
+      "hash": "b6799e97def1bcc1",
+      "duration": 12.56,
+      "characters": 207,
+      "role": "host"
+    },
+    "kernel/twoworlds/user/2": {
+      "file": "kernel/twoworlds-user-2.mp3",
+      "hash": "9428bdcad6f2ca5e",
+      "duration": 5.44,
+      "characters": 121,
+      "role": "host"
+    },
+    "kernel/twoworlds/wall/0": {
+      "file": "kernel/twoworlds-wall-0.mp3",
+      "hash": "280ce0685c0d5188",
+      "duration": 1.76,
+      "characters": 29,
+      "role": "host"
+    },
+    "kernel/twoworlds/wall/1": {
+      "file": "kernel/twoworlds-wall-1.mp3",
+      "hash": "b0a208764d98fd5e",
+      "duration": 3.68,
+      "characters": 65,
+      "role": "host"
+    },
+    "kernel/twoworlds/wall/2": {
+      "file": "kernel/twoworlds-wall-2.mp3",
+      "hash": "ae832fa3b79d1d4a",
+      "duration": 9.92,
+      "characters": 165,
+      "role": "host"
+    },
+    "kernel/twoworlds/wall/3": {
+      "file": "kernel/twoworlds-wall-3.mp3",
+      "hash": "8c9c469c93e171ff",
+      "duration": 11.28,
+      "characters": 194,
+      "role": "host"
+    },
+    "kernel/asking/syscall/0": {
+      "file": "kernel/asking-syscall-0.mp3",
+      "hash": "68bd718f2f77bd0b",
+      "duration": 2.32,
+      "characters": 45,
+      "role": "host"
+    },
+    "kernel/asking/syscall/1": {
+      "file": "kernel/asking-syscall-1.mp3",
+      "hash": "714a4e062fd01888",
+      "duration": 13.84,
+      "characters": 221,
+      "role": "host"
+    },
+    "kernel/asking/syscall/2": {
+      "file": "kernel/asking-syscall-2.mp3",
+      "hash": "4b25b311d57be874",
+      "duration": 18,
+      "characters": 293,
+      "role": "host"
+    },
+    "kernel/asking/refuse/0": {
+      "file": "kernel/asking-refuse-0.mp3",
+      "hash": "8cc08d970fa45e8d",
+      "duration": 2.24,
+      "characters": 25,
+      "role": "host"
+    },
+    "kernel/asking/refuse/1": {
+      "file": "kernel/asking-refuse-1.mp3",
+      "hash": "59a177eca162ce89",
+      "duration": 13.52,
+      "characters": 198,
+      "role": "host"
+    },
+    "kernel/asking/refuse/2": {
+      "file": "kernel/asking-refuse-2.mp3",
+      "hash": "66d1807474c1474f",
+      "duration": 9.28,
+      "characters": 172,
+      "role": "host"
+    },
+    "kernel/turns/schedule/0": {
+      "file": "kernel/turns-schedule-0.mp3",
+      "hash": "6a22b3bc629c7442",
+      "duration": 3.44,
+      "characters": 53,
+      "role": "host"
+    },
+    "kernel/turns/schedule/1": {
+      "file": "kernel/turns-schedule-1.mp3",
+      "hash": "ffee26e8e71dd435",
+      "duration": 10.24,
+      "characters": 166,
+      "role": "host"
+    },
+    "kernel/turns/schedule/2": {
+      "file": "kernel/turns-schedule-2.mp3",
+      "hash": "0f9139aed4a2a744",
+      "duration": 10.48,
+      "characters": 183,
+      "role": "host"
+    },
+    "kernel/turns/preempt/0": {
+      "file": "kernel/turns-preempt-0.mp3",
+      "hash": "0d7c7bed8fc5e084",
+      "duration": 4.24,
+      "characters": 69,
+      "role": "host"
+    },
+    "kernel/turns/preempt/1": {
+      "file": "kernel/turns-preempt-1.mp3",
+      "hash": "edbae370d9b7a57c",
+      "duration": 7.76,
+      "characters": 121,
+      "role": "host"
+    },
+    "kernel/turns/preempt/2": {
+      "file": "kernel/turns-preempt-2.mp3",
+      "hash": "1e435bb83911ae87",
+      "duration": 12.8,
+      "characters": 223,
+      "role": "host"
+    },
+    "kernel/turns/preempt/3": {
+      "file": "kernel/turns-preempt-3.mp3",
+      "hash": "9acb50a0b1fe6028",
+      "duration": 13.76,
+      "characters": 244,
+      "role": "host"
+    },
+    "kernel/turns/fair/0": {
+      "file": "kernel/turns-fair-0.mp3",
+      "hash": "4142a68212b24166",
+      "duration": 3.44,
+      "characters": 67,
+      "role": "host"
+    },
+    "kernel/turns/fair/1": {
+      "file": "kernel/turns-fair-1.mp3",
+      "hash": "c2b4919d5d8f0704",
+      "duration": 8.8,
+      "characters": 137,
+      "role": "host"
+    },
+    "kernel/turns/fair/2": {
+      "file": "kernel/turns-fair-2.mp3",
+      "hash": "34ecd9a163eddd4d",
+      "duration": 9.12,
+      "characters": 171,
+      "role": "host"
+    },
+    "kernel/addresses/mmu/0": {
+      "file": "kernel/addresses-mmu-0.mp3",
+      "hash": "b995cc1164c67f30",
+      "duration": 6.88,
+      "characters": 115,
+      "role": "host"
+    },
+    "kernel/addresses/mmu/1": {
+      "file": "kernel/addresses-mmu-1.mp3",
+      "hash": "0806138285745e0a",
+      "duration": 8,
+      "characters": 153,
+      "role": "host"
+    },
+    "kernel/addresses/mmu/2": {
+      "file": "kernel/addresses-mmu-2.mp3",
+      "hash": "3209e1709b04544d",
+      "duration": 8.56,
+      "characters": 141,
+      "role": "host"
+    },
+    "kernel/addresses/isolation/0": {
+      "file": "kernel/addresses-isolation-0.mp3",
+      "hash": "87172eb58bc05113",
+      "duration": 1.44,
+      "characters": 27,
+      "role": "host"
+    },
+    "kernel/addresses/isolation/1": {
+      "file": "kernel/addresses-isolation-1.mp3",
+      "hash": "abb250886bcb3b25",
+      "duration": 17.44,
+      "characters": 283,
+      "role": "host"
+    },
+    "kernel/addresses/isolation/2": {
+      "file": "kernel/addresses-isolation-2.mp3",
+      "hash": "68380b0454e8d527",
+      "duration": 8.24,
+      "characters": 167,
+      "role": "host"
+    },
+    "kernel/addresses/isolation/3": {
+      "file": "kernel/addresses-isolation-3.mp3",
+      "hash": "14ab3f3a656646ae",
+      "duration": 13.28,
+      "characters": 217,
+      "role": "host"
+    },
+    "os/wallplace/monolith/0": {
+      "file": "os/wallplace-monolith-0.mp3",
+      "hash": "54536d2fecd3023c",
+      "duration": 6.4,
+      "characters": 96,
+      "role": "host"
+    },
+    "os/wallplace/monolith/1": {
+      "file": "os/wallplace-monolith-1.mp3",
+      "hash": "f2c0bc1477d91bb3",
+      "duration": 11.28,
+      "characters": 150,
+      "role": "host"
+    },
+    "os/wallplace/monolith/2": {
+      "file": "os/wallplace-monolith-2.mp3",
+      "hash": "44e401841cc9ff83",
+      "duration": 12.08,
+      "characters": 167,
+      "role": "host"
+    },
+    "os/wallplace/micro/0": {
+      "file": "os/wallplace-micro-0.mp3",
+      "hash": "f93ad9810534c1c6",
+      "duration": 1.36,
+      "characters": 24,
+      "role": "host"
+    },
+    "os/wallplace/micro/1": {
+      "file": "os/wallplace-micro-1.mp3",
+      "hash": "299e2846814d6614",
+      "duration": 12.24,
+      "characters": 158,
+      "role": "host"
+    },
+    "os/wallplace/micro/2": {
+      "file": "os/wallplace-micro-2.mp3",
+      "hash": "3f9d1d1cb9a5620f",
+      "duration": 12,
+      "characters": 152,
+      "role": "host"
+    },
+    "os/wallplace/micro/3": {
+      "file": "os/wallplace-micro-3.mp3",
+      "hash": "aae50252b75dc043",
+      "duration": 2,
+      "characters": 34,
+      "role": "host"
+    },
+    "os/wallplace/trade/0": {
+      "file": "os/wallplace-trade-0.mp3",
+      "hash": "4de7e392935f99b2",
+      "duration": 4.8,
+      "characters": 54,
+      "role": "host"
+    },
+    "os/wallplace/trade/1": {
+      "file": "os/wallplace-trade-1.mp3",
+      "hash": "a8df1d234a7ad81f",
+      "duration": 11.76,
+      "characters": 182,
+      "role": "host"
+    },
+    "os/wallplace/trade/2": {
+      "file": "os/wallplace-trade-2.mp3",
+      "hash": "13a497162ce93290",
+      "duration": 12.64,
+      "characters": 197,
+      "role": "host"
+    },
+    "os/wallplace/trade/3": {
+      "file": "os/wallplace-trade-3.mp3",
+      "hash": "c6dad96da7db7175",
+      "duration": 28.08,
+      "characters": 368,
+      "role": "host"
+    },
+    "os/families/families/0": {
+      "file": "os/families-families-0.mp3",
+      "hash": "0ef41ece826fa7b6",
+      "duration": 3.68,
+      "characters": 52,
+      "role": "host"
+    },
+    "os/families/families/1": {
+      "file": "os/families-families-1.mp3",
+      "hash": "203416faa09bf0b7",
+      "duration": 22.24,
+      "characters": 294,
+      "role": "host"
+    },
+    "os/families/families/2": {
+      "file": "os/families-families-2.mp3",
+      "hash": "478f08e673b97115",
+      "duration": 7.84,
+      "characters": 125,
+      "role": "host"
+    },
+    "os/families/posix/0": {
+      "file": "os/families-posix-0.mp3",
+      "hash": "57d07690083cd6c0",
+      "duration": 2.64,
+      "characters": 45,
+      "role": "host"
+    },
+    "os/families/posix/1": {
+      "file": "os/families-posix-1.mp3",
+      "hash": "4619ba1111f7ab97",
+      "duration": 10.16,
+      "characters": 134,
+      "role": "host"
+    },
+    "os/families/posix/2": {
+      "file": "os/families-posix-2.mp3",
+      "hash": "9f5e5f793bdb25f7",
+      "duration": 11.28,
+      "characters": 173,
+      "role": "host"
+    },
+    "os/deadlines/rtos/0": {
+      "file": "os/deadlines-rtos-0.mp3",
+      "hash": "9288fd9ba006076f",
+      "duration": 4.72,
+      "characters": 58,
+      "role": "host"
+    },
+    "os/deadlines/rtos/1": {
+      "file": "os/deadlines-rtos-1.mp3",
+      "hash": "8a90260e38b24d92",
+      "duration": 13.76,
+      "characters": 174,
+      "role": "host"
+    },
+    "os/deadlines/rtos/2": {
+      "file": "os/deadlines-rtos-2.mp3",
+      "hash": "986f585802e098b9",
+      "duration": 15.84,
+      "characters": 225,
+      "role": "host"
+    },
+    "os/deadlines/hard/0": {
+      "file": "os/deadlines-hard-0.mp3",
+      "hash": "c5a96fc3b311b244",
+      "duration": 3.6,
+      "characters": 49,
+      "role": "host"
+    },
+    "os/deadlines/hard/1": {
+      "file": "os/deadlines-hard-1.mp3",
+      "hash": "f77dfcad784cd660",
+      "duration": 13.6,
+      "characters": 166,
+      "role": "host"
+    },
+    "os/deadlines/hard/2": {
+      "file": "os/deadlines-hard-2.mp3",
+      "hash": "6c88d83fc22f2e05",
+      "duration": 6.8,
+      "characters": 101,
+      "role": "host"
+    },
+    "os/deadlines/hard/3": {
+      "file": "os/deadlines-hard-3.mp3",
+      "hash": "b904b664f2e01c8a",
+      "duration": 18.64,
+      "characters": 237,
+      "role": "host"
+    },
+    "os/deadlines/embedded/0": {
+      "file": "os/deadlines-embedded-0.mp3",
+      "hash": "f51d281490641e43",
+      "duration": 2.48,
+      "characters": 49,
+      "role": "host"
+    },
+    "os/deadlines/embedded/1": {
+      "file": "os/deadlines-embedded-1.mp3",
+      "hash": "0b8aafb7c8bc1a73",
+      "duration": 20.64,
+      "characters": 257,
+      "role": "host"
+    },
+    "os/deadlines/embedded/2": {
+      "file": "os/deadlines-embedded-2.mp3",
+      "hash": "612643353df353b5",
+      "duration": 9.68,
+      "characters": 149,
+      "role": "host"
+    },
+    "os/deadlines/embedded/3": {
+      "file": "os/deadlines-embedded-3.mp3",
+      "hash": "9e6b6546f235ad8f",
+      "duration": 11.36,
+      "characters": 161,
+      "role": "host"
+    },
+    "compile/written/source/0": {
+      "file": "compile/written-source-0.mp3",
+      "hash": "13d52643a3088a74",
+      "duration": 5.84,
+      "characters": 75,
+      "role": "host"
+    },
+    "compile/written/source/1": {
+      "file": "compile/written-source-1.mp3",
+      "hash": "36bc8db49d85b79e",
+      "duration": 11.6,
+      "characters": 191,
+      "role": "host"
+    },
+    "compile/written/source/2": {
+      "file": "compile/written-source-2.mp3",
+      "hash": "053019bf82a3a4ba",
+      "duration": 8.96,
+      "characters": 152,
+      "role": "host"
+    },
+    "compile/written/compile/0": {
+      "file": "compile/written-compile-0.mp3",
+      "hash": "3b5d76e660d4bbb6",
+      "duration": 2.72,
+      "characters": 46,
+      "role": "host"
+    },
+    "compile/written/compile/1": {
+      "file": "compile/written-compile-1.mp3",
+      "hash": "cd751e81cb5cca8f",
+      "duration": 10.4,
+      "characters": 168,
+      "role": "host"
+    },
+    "compile/written/compile/2": {
+      "file": "compile/written-compile-2.mp3",
+      "hash": "aa670f9d739e7a9f",
+      "duration": 15.44,
+      "characters": 266,
+      "role": "host"
+    },
+    "compile/written/compile/3": {
+      "file": "compile/written-compile-3.mp3",
+      "hash": "61c492ab45b13734",
+      "duration": 15.84,
+      "characters": 251,
+      "role": "host"
+    },
+    "compile/written/expand/0": {
+      "file": "compile/written-expand-0.mp3",
+      "hash": "26fb8be3ce9d6683",
+      "duration": 2.24,
+      "characters": 36,
+      "role": "host"
+    },
+    "compile/written/expand/1": {
+      "file": "compile/written-expand-1.mp3",
+      "hash": "bc6403ac5b6961e3",
+      "duration": 8.64,
+      "characters": 121,
+      "role": "host"
+    },
+    "compile/written/expand/2": {
+      "file": "compile/written-expand-2.mp3",
+      "hash": "a5705ac9fadaf57f",
+      "duration": 9.68,
+      "characters": 158,
+      "role": "host"
+    },
+    "compile/written/expand/3": {
+      "file": "compile/written-expand-3.mp3",
+      "hash": "0c6a2a5a2124977f",
+      "duration": 10.4,
+      "characters": 192,
+      "role": "host"
+    },
+    "compile/contract/machine/0": {
+      "file": "compile/contract-machine-0.mp3",
+      "hash": "a653b9527c76ea54",
+      "duration": 1.92,
+      "characters": 31,
+      "role": "host"
+    },
+    "compile/contract/machine/1": {
+      "file": "compile/contract-machine-1.mp3",
+      "hash": "50003a5399841b45",
+      "duration": 10,
+      "characters": 173,
+      "role": "host"
+    },
+    "compile/contract/machine/2": {
+      "file": "compile/contract-machine-2.mp3",
+      "hash": "b752abe86763b290",
+      "duration": 7.92,
+      "characters": 142,
+      "role": "host"
+    },
+    "compile/contract/isa/0": {
+      "file": "compile/contract-isa-0.mp3",
+      "hash": "c1035da63cf257e4",
+      "duration": 3.68,
+      "characters": 51,
+      "role": "host"
+    },
+    "compile/contract/isa/1": {
+      "file": "compile/contract-isa-1.mp3",
+      "hash": "8a133cc8e3773505",
+      "duration": 18.48,
+      "characters": 277,
+      "role": "host"
+    },
+    "compile/contract/isa/2": {
+      "file": "compile/contract-isa-2.mp3",
+      "hash": "a8321c8778c9420a",
+      "duration": 20.48,
+      "characters": 341,
+      "role": "host"
+    },
+    "compile/running/overlap/0": {
+      "file": "compile/running-overlap-0.mp3",
+      "hash": "43ec162a5c1571e2",
+      "duration": 4,
+      "characters": 75,
+      "role": "host"
+    },
+    "compile/running/overlap/1": {
+      "file": "compile/running-overlap-1.mp3",
+      "hash": "6a8d3e3b7604438e",
+      "duration": 10.96,
+      "characters": 170,
+      "role": "host"
+    },
+    "compile/running/overlap/2": {
+      "file": "compile/running-overlap-2.mp3",
+      "hash": "bfe56e30231b494f",
+      "duration": 7.28,
+      "characters": 125,
+      "role": "host"
+    },
+    "compile/running/speculation/0": {
+      "file": "compile/running-speculation-0.mp3",
+      "hash": "d4ae61efbc8d0686",
+      "duration": 4.64,
+      "characters": 84,
+      "role": "host"
+    },
+    "compile/running/speculation/1": {
+      "file": "compile/running-speculation-1.mp3",
+      "hash": "cecc33885fe8e1a9",
+      "duration": 5.52,
+      "characters": 84,
+      "role": "host"
+    },
+    "compile/running/speculation/2": {
+      "file": "compile/running-speculation-2.mp3",
+      "hash": "0f6b70eccd3b4fc0",
+      "duration": 8.72,
+      "characters": 154,
+      "role": "host"
+    },
+    "compile/physical/halfadder/0": {
+      "file": "compile/physical-halfadder-0.mp3",
+      "hash": "33b0b943a89854ad",
+      "duration": 6.4,
+      "characters": 97,
+      "role": "host"
+    },
+    "compile/physical/halfadder/1": {
+      "file": "compile/physical-halfadder-1.mp3",
+      "hash": "dd266c73efc9564d",
+      "duration": 7.36,
+      "characters": 89,
+      "role": "host"
+    },
+    "compile/physical/halfadder/2": {
+      "file": "compile/physical-halfadder-2.mp3",
+      "hash": "4458bda7279b3990",
+      "duration": 8.16,
+      "characters": 140,
+      "role": "host"
+    },
+    "compile/current/channel/0": {
+      "file": "compile/current-channel-0.mp3",
+      "hash": "585abdeccecf2338",
+      "duration": 1.6,
+      "characters": 25,
+      "role": "host"
+    },
+    "compile/current/channel/1": {
+      "file": "compile/current-channel-1.mp3",
+      "hash": "d111b5ea12398c2a",
+      "duration": 12.88,
+      "characters": 190,
+      "role": "host"
+    },
+    "compile/current/channel/2": {
+      "file": "compile/current-channel-2.mp3",
+      "hash": "5c78a8a0a4d36ba0",
+      "duration": 6.64,
+      "characters": 109,
+      "role": "host"
+    },
+    "compile/current/whole/0": {
+      "file": "compile/current-whole-0.mp3",
+      "hash": "1538f83cc31eb1a6",
+      "duration": 2.96,
+      "characters": 35,
+      "role": "host"
+    },
+    "compile/current/whole/1": {
+      "file": "compile/current-whole-1.mp3",
+      "hash": "f0090b4cb301acac",
+      "duration": 7.28,
+      "characters": 102,
+      "role": "host"
+    },
+    "compile/current/whole/2": {
+      "file": "compile/current-whole-2.mp3",
+      "hash": "30c57594bbc08549",
+      "duration": 10,
+      "characters": 175,
+      "role": "host"
+    },
+    "compile/current/whole/3": {
+      "file": "compile/current-whole-3.mp3",
+      "hash": "a4b54b142b2dca7c",
+      "duration": 6.72,
+      "characters": 119,
+      "role": "host"
+    },
+    "compile/current/whole/4": {
+      "file": "compile/current-whole-4.mp3",
+      "hash": "348fa1420402a5cc",
+      "duration": 8.72,
+      "characters": 153,
+      "role": "host"
+    },
+    "phone/onedie/die/0": {
+      "file": "phone/onedie-die-0.mp3",
+      "hash": "802b7c9ea8948a5b",
+      "duration": 7.92,
+      "characters": 111,
+      "role": "host"
+    },
+    "phone/onedie/die/1": {
+      "file": "phone/onedie-die-1.mp3",
+      "hash": "3c0aedb22eb5d6f0",
+      "duration": 18.64,
+      "characters": 260,
+      "role": "host"
+    },
+    "phone/onedie/die/2": {
+      "file": "phone/onedie-die-2.mp3",
+      "hash": "89b397da3d553b57",
+      "duration": 12.72,
+      "characters": 196,
+      "role": "host"
+    },
+    "phone/onedie/compare/0": {
+      "file": "phone/onedie-compare-0.mp3",
+      "hash": "9bd30bee407141f1",
+      "duration": 3.76,
+      "characters": 54,
+      "role": "host"
+    },
+    "phone/onedie/compare/1": {
+      "file": "phone/onedie-compare-1.mp3",
+      "hash": "a85efe891eb24ff2",
+      "duration": 10.48,
+      "characters": 131,
+      "role": "host"
+    },
+    "phone/onedie/compare/2": {
+      "file": "phone/onedie-compare-2.mp3",
+      "hash": "e3d147f03febf2f5",
+      "duration": 15.12,
+      "characters": 226,
+      "role": "host"
+    },
+    "phone/cores/little/0": {
+      "file": "phone/cores-little-0.mp3",
+      "hash": "5c1ad99d8b28aa94",
+      "duration": 4.4,
+      "characters": 72,
+      "role": "host"
+    },
+    "phone/cores/little/1": {
+      "file": "phone/cores-little-1.mp3",
+      "hash": "142eea61d4ee0ce3",
+      "duration": 12.88,
+      "characters": 197,
+      "role": "host"
+    },
+    "phone/cores/little/2": {
+      "file": "phone/cores-little-2.mp3",
+      "hash": "e402e5de9dcebaf6",
+      "duration": 7.2,
+      "characters": 110,
+      "role": "host"
+    },
+    "phone/cores/prime/0": {
+      "file": "phone/cores-prime-0.mp3",
+      "hash": "b9964c8308f03de6",
+      "duration": 2.56,
+      "characters": 33,
+      "role": "host"
+    },
+    "phone/cores/prime/1": {
+      "file": "phone/cores-prime-1.mp3",
+      "hash": "da69d5a8e5e88376",
+      "duration": 12.8,
+      "characters": 184,
+      "role": "host"
+    },
+    "phone/cores/prime/2": {
+      "file": "phone/cores-prime-2.mp3",
+      "hash": "80f1c4e6cf101ea6",
+      "duration": 17.92,
+      "characters": 254,
+      "role": "host"
+    },
+    "phone/cores/prime/3": {
+      "file": "phone/cores-prime-3.mp3",
+      "hash": "b4af3c889fdff953",
+      "duration": 24.88,
+      "characters": 354,
+      "role": "host"
+    },
+    "phone/cores/scheduler/0": {
+      "file": "phone/cores-scheduler-0.mp3",
+      "hash": "84a1a6f2611bf3e3",
+      "duration": 2.24,
+      "characters": 40,
+      "role": "host"
+    },
+    "phone/cores/scheduler/1": {
+      "file": "phone/cores-scheduler-1.mp3",
+      "hash": "d73bacd28aea39a0",
+      "duration": 16.08,
+      "characters": 221,
+      "role": "host"
+    },
+    "phone/cores/scheduler/2": {
+      "file": "phone/cores-scheduler-2.mp3",
+      "hash": "1a5723ada7847e52",
+      "duration": 8.8,
+      "characters": 139,
+      "role": "host"
+    },
+    "phone/dark/gating/0": {
+      "file": "phone/dark-gating-0.mp3",
+      "hash": "a1ed4046e9f6c405",
+      "duration": 4.4,
+      "characters": 65,
+      "role": "host"
+    },
+    "phone/dark/gating/1": {
+      "file": "phone/dark-gating-1.mp3",
+      "hash": "49522e465bfc3eba",
+      "duration": 14.64,
+      "characters": 207,
+      "role": "host"
+    },
+    "phone/dark/gating/2": {
+      "file": "phone/dark-gating-2.mp3",
+      "hash": "fe6557fea71756a7",
+      "duration": 6.16,
+      "characters": 106,
+      "role": "host"
+    },
+    "phone/dark/dark/0": {
+      "file": "phone/dark-dark-0.mp3",
+      "hash": "b8eff12d68f3116d",
+      "duration": 3.84,
+      "characters": 50,
+      "role": "host"
+    },
+    "phone/dark/dark/1": {
+      "file": "phone/dark-dark-1.mp3",
+      "hash": "2eb2d3bed174812b",
+      "duration": 15.04,
+      "characters": 217,
+      "role": "host"
+    },
+    "phone/dark/dark/2": {
+      "file": "phone/dark-dark-2.mp3",
+      "hash": "4fb32c439a02c2cd",
+      "duration": 11.04,
+      "characters": 158,
+      "role": "host"
+    },
+    "phone/sealed/sealed/0": {
+      "file": "phone/sealed-sealed-0.mp3",
+      "hash": "40bc4e8a82f72d0c",
+      "duration": 3.28,
+      "characters": 46,
+      "role": "host"
+    },
+    "phone/sealed/sealed/2": {
+      "file": "phone/sealed-sealed-2.mp3",
+      "hash": "ba06617aa4b1b2c0",
+      "duration": 18.16,
+      "characters": 287,
+      "role": "host"
+    },
+    "phone/sealed/throttle/0": {
+      "file": "phone/sealed-throttle-0.mp3",
+      "hash": "9ba78a8573fc1877",
+      "duration": 1.28,
+      "characters": 16,
+      "role": "host"
+    },
+    "phone/sealed/throttle/1": {
+      "file": "phone/sealed-throttle-1.mp3",
+      "hash": "3aa64ed243b7efb9",
+      "duration": 15.36,
+      "characters": 198,
+      "role": "host"
+    },
+    "phone/sealed/throttle/2": {
+      "file": "phone/sealed-throttle-2.mp3",
+      "hash": "2d8d8fd2dea6a730",
+      "duration": 11.2,
+      "characters": 170,
+      "role": "host"
+    },
+    "phone/sealed/budget/0": {
+      "file": "phone/sealed-budget-0.mp3",
+      "hash": "0493b0a03e262d11",
+      "duration": 3.44,
+      "characters": 55,
+      "role": "host"
+    },
+    "phone/sealed/budget/1": {
+      "file": "phone/sealed-budget-1.mp3",
+      "hash": "a64599ad0c1b7e91",
+      "duration": 15.68,
+      "characters": 237,
+      "role": "host"
+    },
+    "phone/sealed/budget/3": {
+      "file": "phone/sealed-budget-3.mp3",
+      "hash": "740240292c4d9fb7",
+      "duration": 9.84,
+      "characters": 140,
+      "role": "host"
+    },
+    "edge/asleep/asleep/0": {
+      "file": "edge/asleep-asleep-0.mp3",
+      "hash": "0db81dd675c0878d",
+      "duration": 4.4,
+      "characters": 70,
+      "role": "host"
+    },
+    "edge/asleep/asleep/1": {
+      "file": "edge/asleep-asleep-1.mp3",
+      "hash": "9012f5ef2e6a050e",
+      "duration": 13.36,
+      "characters": 178,
+      "role": "host"
+    },
+    "edge/asleep/asleep/2": {
+      "file": "edge/asleep-asleep-2.mp3",
+      "hash": "c6f4574220626e5b",
+      "duration": 9.76,
+      "characters": 196,
+      "role": "host"
+    },
+    "edge/asleep/timer/0": {
+      "file": "edge/asleep-timer-0.mp3",
+      "hash": "169ab46e331f656e",
+      "duration": 2.8,
+      "characters": 56,
+      "role": "host"
+    },
+    "edge/asleep/timer/1": {
+      "file": "edge/asleep-timer-1.mp3",
+      "hash": "72e54a4cfbe33ec0",
+      "duration": 10.96,
+      "characters": 167,
+      "role": "host"
+    },
+    "edge/asleep/timer/2": {
+      "file": "edge/asleep-timer-2.mp3",
+      "hash": "2c209ca7531608b7",
+      "duration": 10.8,
+      "characters": 178,
+      "role": "host"
+    },
+    "edge/cycle/wake/0": {
+      "file": "edge/cycle-wake-0.mp3",
+      "hash": "b56224a7ed0ee7e7",
+      "duration": 3.36,
+      "characters": 62,
+      "role": "host"
+    },
+    "edge/cycle/wake/1": {
+      "file": "edge/cycle-wake-1.mp3",
+      "hash": "a3ab8eab06f4515c",
+      "duration": 7.2,
+      "characters": 113,
+      "role": "host"
+    },
+    "edge/cycle/wake/2": {
+      "file": "edge/cycle-wake-2.mp3",
+      "hash": "5d9f54ed19caff58",
+      "duration": 9.44,
+      "characters": 129,
+      "role": "host"
+    },
+    "edge/cycle/work/0": {
+      "file": "edge/cycle-work-0.mp3",
+      "hash": "42695d7e6446cf10",
+      "duration": 2.56,
+      "characters": 32,
+      "role": "host"
+    },
+    "edge/cycle/work/1": {
+      "file": "edge/cycle-work-1.mp3",
+      "hash": "1aa796cac285f518",
+      "duration": 12.32,
+      "characters": 187,
+      "role": "host"
+    },
+    "edge/cycle/work/2": {
+      "file": "edge/cycle-work-2.mp3",
+      "hash": "f919bc5361162793",
+      "duration": 9.28,
+      "characters": 190,
+      "role": "host"
+    },
+    "edge/cycle/sleep/0": {
+      "file": "edge/cycle-sleep-0.mp3",
+      "hash": "404377bfbcd7ef22",
+      "duration": 3.2,
+      "characters": 61,
+      "role": "host"
+    },
+    "edge/cycle/sleep/1": {
+      "file": "edge/cycle-sleep-1.mp3",
+      "hash": "03d63c608a2fb979",
+      "duration": 11.36,
+      "characters": 176,
+      "role": "host"
+    },
+    "edge/cycle/sleep/2": {
+      "file": "edge/cycle-sleep-2.mp3",
+      "hash": "f625bc529791281c",
+      "duration": 7.76,
+      "characters": 130,
+      "role": "host"
+    },
+    "edge/cycle/sleep/3": {
+      "file": "edge/cycle-sleep-3.mp3",
+      "hash": "5164d8574ebfb2a1",
+      "duration": 6.32,
+      "characters": 133,
+      "role": "host"
+    },
+    "edge/given/noos/0": {
+      "file": "edge/given-noos-0.mp3",
+      "hash": "1f802aa9c12efdb2",
+      "duration": 3.28,
+      "characters": 49,
+      "role": "host"
+    },
+    "edge/given/unreachable/0": {
+      "file": "edge/given-unreachable-0.mp3",
+      "hash": "f8654ae0bde347fb",
+      "duration": 4.88,
+      "characters": 72,
+      "role": "host"
+    },
+    "edge/given/unreachable/1": {
+      "file": "edge/given-unreachable-1.mp3",
+      "hash": "b44bb960ffd23b24",
+      "duration": 5.92,
+      "characters": 110,
+      "role": "host"
+    },
+    "edge/given/unreachable/2": {
+      "file": "edge/given-unreachable-2.mp3",
+      "hash": "44f83dd813d731a6",
+      "duration": 14.56,
+      "characters": 274,
+      "role": "host"
+    },
+    "edge/given/determinism/0": {
+      "file": "edge/given-determinism-0.mp3",
+      "hash": "2b7017ab7dc5c9a3",
+      "duration": 2.72,
+      "characters": 51,
+      "role": "host"
+    },
+    "edge/given/determinism/3": {
+      "file": "edge/given-determinism-3.mp3",
+      "hash": "6f2bf9bdab85cf3b",
+      "duration": 9.76,
+      "characters": 178,
+      "role": "host"
+    },
+    "car/many/units/0": {
+      "file": "car/many-units-0.mp3",
+      "hash": "f4579119413f00f7",
+      "duration": 7.6,
+      "characters": 98,
+      "role": "host"
+    },
+    "car/many/units/1": {
+      "file": "car/many-units-1.mp3",
+      "hash": "10ee40f582d4ccd8",
+      "duration": 16.48,
+      "characters": 202,
+      "role": "host"
+    },
+    "car/many/units/2": {
+      "file": "car/many-units-2.mp3",
+      "hash": "7a9a79384e28cab4",
+      "duration": 11.28,
+      "characters": 191,
+      "role": "host"
+    },
+    "car/many/harness/0": {
+      "file": "car/many-harness-0.mp3",
+      "hash": "b878846fc84997f0",
+      "duration": 2.4,
+      "characters": 35,
+      "role": "host"
+    },
+    "car/many/harness/2": {
+      "file": "car/many-harness-2.mp3",
+      "hash": "9e0048d8aa91d286",
+      "duration": 9.44,
+      "characters": 140,
+      "role": "host"
+    },
+    "car/onewire/bus/0": {
+      "file": "car/onewire-bus-0.mp3",
+      "hash": "3aa16b94353ea668",
+      "duration": 2.48,
+      "characters": 37,
+      "role": "host"
+    },
+    "car/onewire/bus/2": {
+      "file": "car/onewire-bus-2.mp3",
+      "hash": "b982173af77fd9a5",
+      "duration": 8.24,
+      "characters": 131,
+      "role": "host"
+    },
+    "car/onewire/arbitrate/0": {
+      "file": "car/onewire-arbitrate-0.mp3",
+      "hash": "669a40c4b67dd433",
+      "duration": 2.72,
+      "characters": 36,
+      "role": "host"
+    },
+    "car/onewire/arbitrate/1": {
+      "file": "car/onewire-arbitrate-1.mp3",
+      "hash": "ea427f8affa5e6cb",
+      "duration": 15.28,
+      "characters": 197,
+      "role": "host"
+    },
+    "car/onewire/arbitrate/2": {
+      "file": "car/onewire-arbitrate-2.mp3",
+      "hash": "5f73a124176370ce",
+      "duration": 8.24,
+      "characters": 108,
+      "role": "host"
+    },
+    "car/onewire/nondestructive/0": {
+      "file": "car/onewire-nondestructive-0.mp3",
+      "hash": "c16d3f5109710252",
+      "duration": 2.4,
+      "characters": 43,
+      "role": "host"
+    },
+    "car/zonal/software/0": {
+      "file": "car/zonal-software-0.mp3",
+      "hash": "b9546e8c5ca23bcd",
+      "duration": 4.32,
+      "characters": 63,
+      "role": "host"
+    },
+    "car/zonal/software/1": {
+      "file": "car/zonal-software-1.mp3",
+      "hash": "8cc013bfa2c15908",
+      "duration": 12.72,
+      "characters": 199,
+      "role": "host"
+    },
+    "car/zonal/software/2": {
+      "file": "car/zonal-software-2.mp3",
+      "hash": "78b5bc882d6038fb",
+      "duration": 12.96,
+      "characters": 182,
+      "role": "host"
+    },
+    "car/mustnot/lockstep/0": {
+      "file": "car/mustnot-lockstep-0.mp3",
+      "hash": "93e4176c4ef4ee5b",
+      "duration": 6.08,
+      "characters": 80,
+      "role": "host"
+    },
+    "car/mustnot/lockstep/2": {
+      "file": "car/mustnot-lockstep-2.mp3",
+      "hash": "c93add4cd9d228c9",
+      "duration": 16,
+      "characters": 211,
+      "role": "host"
+    },
+    "car/mustnot/asil/0": {
+      "file": "car/mustnot-asil-0.mp3",
+      "hash": "e414fdce9a1b8da8",
+      "duration": 4.24,
+      "characters": 58,
+      "role": "host"
+    },
+    "car/mustnot/asil/2": {
+      "file": "car/mustnot-asil-2.mp3",
+      "hash": "98b1f98f3a8b1c8e",
+      "duration": 8.88,
+      "characters": 161,
+      "role": "host"
+    },
+    "car/mustnot/lifetime/0": {
+      "file": "car/mustnot-lifetime-0.mp3",
+      "hash": "68a008ead859fe22",
+      "duration": 3.04,
+      "characters": 55,
+      "role": "host"
+    },
+    "car/mustnot/lifetime/1": {
+      "file": "car/mustnot-lifetime-1.mp3",
+      "hash": "4edc7dbb669f0e07",
+      "duration": 18.56,
+      "characters": 277,
+      "role": "host"
+    },
+    "car/mustnot/lifetime/2": {
+      "file": "car/mustnot-lifetime-2.mp3",
+      "hash": "83ea86414949e3dc",
+      "duration": 17.52,
+      "characters": 230,
+      "role": "host"
+    },
+    "car/mustnot/lifetime/3": {
+      "file": "car/mustnot-lifetime-3.mp3",
+      "hash": "73a75ff8fddf7fbc",
+      "duration": 10.72,
+      "characters": 162,
+      "role": "host"
+    },
+    "car/zonal/zonal/0": {
+      "file": "car/zonal-zonal-0.mp3",
+      "hash": "afaad10a99adffee",
+      "duration": 1.76,
+      "characters": 25,
+      "role": "host"
+    },
+    "car/zonal/zonal/1": {
+      "file": "car/zonal-zonal-1.mp3",
+      "hash": "bbb8f3d00deed629",
+      "duration": 13.52,
+      "characters": 175,
+      "role": "host"
+    },
+    "car/zonal/zonal/2": {
+      "file": "car/zonal-zonal-2.mp3",
+      "hash": "49da03e160410007",
+      "duration": 11.84,
+      "characters": 161,
+      "role": "host"
+    },
+    "robot/twoloops/fast/0": {
+      "file": "robot/twoloops-fast-0.mp3",
+      "hash": "51e5bcbf222074fe",
+      "duration": 5.2,
+      "characters": 96,
+      "role": "host"
+    },
+    "robot/twoloops/fast/1": {
+      "file": "robot/twoloops-fast-1.mp3",
+      "hash": "0d01bec8f64e388a",
+      "duration": 22.24,
+      "characters": 330,
+      "role": "host"
+    },
+    "robot/twoloops/fast/2": {
+      "file": "robot/twoloops-fast-2.mp3",
+      "hash": "103911ccb3a4cd2a",
+      "duration": 10.96,
+      "characters": 201,
+      "role": "host"
+    },
+    "robot/twoloops/slow/0": {
+      "file": "robot/twoloops-slow-0.mp3",
+      "hash": "d85b5abd376ec07a",
+      "duration": 4.24,
+      "characters": 68,
+      "role": "host"
+    },
+    "robot/twoloops/slow/1": {
+      "file": "robot/twoloops-slow-1.mp3",
+      "hash": "deefa799d4e8add1",
+      "duration": 14.32,
+      "characters": 213,
+      "role": "host"
+    },
+    "robot/twoloops/slow/2": {
+      "file": "robot/twoloops-slow-2.mp3",
+      "hash": "8358a22c5d24bae9",
+      "duration": 9.44,
+      "characters": 150,
+      "role": "host"
+    },
+    "robot/twoloops/contrast/0": {
+      "file": "robot/twoloops-contrast-0.mp3",
+      "hash": "b9058d5796abaa8c",
+      "duration": 1.44,
+      "characters": 28,
+      "role": "host"
+    },
+    "robot/twoloops/contrast/1": {
+      "file": "robot/twoloops-contrast-1.mp3",
+      "hash": "55e29ff30ce1e751",
+      "duration": 14.4,
+      "characters": 191,
+      "role": "host"
+    },
+    "robot/twoloops/contrast/2": {
+      "file": "robot/twoloops-contrast-2.mp3",
+      "hash": "b35da9fd5b5d343c",
+      "duration": 9.44,
+      "characters": 140,
+      "role": "host"
+    },
+    "robot/split/split/0": {
+      "file": "robot/split-split-0.mp3",
+      "hash": "008e30805212d873",
+      "duration": 2.72,
+      "characters": 49,
+      "role": "host"
+    },
+    "robot/split/split/2": {
+      "file": "robot/split-split-2.mp3",
+      "hash": "e0fc658d89ed728b",
+      "duration": 11.04,
+      "characters": 204,
+      "role": "host"
+    },
+    "robot/split/split/3": {
+      "file": "robot/split-split-3.mp3",
+      "hash": "011be58cd8e99095",
+      "duration": 2.08,
+      "characters": 40,
+      "role": "host"
+    },
+    "robot/split/unified/0": {
+      "file": "robot/split-unified-0.mp3",
+      "hash": "f4ff2dfd2a1b681d",
+      "duration": 3.92,
+      "characters": 52,
+      "role": "host"
+    },
+    "robot/split/unified/1": {
+      "file": "robot/split-unified-1.mp3",
+      "hash": "ff66faf79b8affef",
+      "duration": 13.12,
+      "characters": 211,
+      "role": "host"
+    },
+    "robot/split/unified/2": {
+      "file": "robot/split-unified-2.mp3",
+      "hash": "094717e2933280d1",
+      "duration": 16.32,
+      "characters": 284,
+      "role": "host"
+    },
+    "robot/late/deadline/0": {
+      "file": "robot/late-deadline-0.mp3",
+      "hash": "ca668e4e194db945",
+      "duration": 1.92,
+      "characters": 31,
+      "role": "host"
+    },
+    "robot/late/deadline/1": {
+      "file": "robot/late-deadline-1.mp3",
+      "hash": "90487cd73d46945f",
+      "duration": 10.32,
+      "characters": 151,
+      "role": "host"
+    },
+    "robot/late/deadline/2": {
+      "file": "robot/late-deadline-2.mp3",
+      "hash": "e3bb5173a859c0f2",
+      "duration": 11.2,
+      "characters": 192,
+      "role": "host"
+    },
+    "robot/late/miss/0": {
+      "file": "robot/late-miss-0.mp3",
+      "hash": "c39cd6c29cb8e7c3",
+      "duration": 1.84,
+      "characters": 26,
+      "role": "host"
+    },
+    "robot/late/miss/1": {
+      "file": "robot/late-miss-1.mp3",
+      "hash": "d5cdc7ff54c818e2",
+      "duration": 8,
+      "characters": 132,
+      "role": "host"
+    },
+    "robot/late/predictable/0": {
+      "file": "robot/late-predictable-0.mp3",
+      "hash": "97c38257790ce0f7",
+      "duration": 3.28,
+      "characters": 61,
+      "role": "host"
+    },
+    "robot/late/predictable/1": {
+      "file": "robot/late-predictable-1.mp3",
+      "hash": "0b425aec42ca04ce",
+      "duration": 11.52,
+      "characters": 172,
+      "role": "host"
+    },
+    "datacenter/onenode/node/0": {
+      "file": "datacenter/onenode-node-0.mp3",
+      "hash": "c6297d515a5215dc",
+      "duration": 9.2,
+      "characters": 136,
+      "role": "host"
+    },
+    "datacenter/onenode/node/2": {
+      "file": "datacenter/onenode-node-2.mp3",
+      "hash": "a98cf1f984e18269",
+      "duration": 9.28,
+      "characters": 157,
+      "role": "host"
+    },
+    "datacenter/onenode/ecc/0": {
+      "file": "datacenter/onenode-ecc-0.mp3",
+      "hash": "9bd784c7add01fe9",
+      "duration": 2.56,
+      "characters": 34,
+      "role": "host"
+    },
+    "datacenter/onenode/ecc/3": {
+      "file": "datacenter/onenode-ecc-3.mp3",
+      "hash": "ed6735111c5e3954",
+      "duration": 21.6,
+      "characters": 300,
+      "role": "host"
+    },
+    "datacenter/many/rack/0": {
+      "file": "datacenter/many-rack-0.mp3",
+      "hash": "f79e3bdad6c2b4fe",
+      "duration": 1.2,
+      "characters": 15,
+      "role": "host"
+    },
+    "datacenter/many/rack/1": {
+      "file": "datacenter/many-rack-1.mp3",
+      "hash": "2199aee95c7f63e1",
+      "duration": 12.96,
+      "characters": 192,
+      "role": "host"
+    },
+    "datacenter/many/hall/0": {
+      "file": "datacenter/many-hall-0.mp3",
+      "hash": "a6614e091373d3be",
+      "duration": 2.88,
+      "characters": 43,
+      "role": "host"
+    },
+    "datacenter/many/hall/1": {
+      "file": "datacenter/many-hall-1.mp3",
+      "hash": "34f9123929e6fc62",
+      "duration": 13.92,
+      "characters": 204,
+      "role": "host"
+    },
+    "datacenter/many/hall/2": {
+      "file": "datacenter/many-hall-2.mp3",
+      "hash": "6781265b207a34a7",
+      "duration": 17.44,
+      "characters": 266,
+      "role": "host"
+    },
+    "datacenter/splitting/shard/0": {
+      "file": "datacenter/splitting-shard-0.mp3",
+      "hash": "a773ede992032d68",
+      "duration": 3.04,
+      "characters": 45,
+      "role": "host"
+    },
+    "datacenter/splitting/shard/1": {
+      "file": "datacenter/splitting-shard-1.mp3",
+      "hash": "5d6135dca1074c6c",
+      "duration": 14.4,
+      "characters": 193,
+      "role": "host"
+    },
+    "datacenter/splitting/shard/2": {
+      "file": "datacenter/splitting-shard-2.mp3",
+      "hash": "2922c41c6767de1a",
+      "duration": 8.32,
+      "characters": 127,
+      "role": "host"
+    },
+    "datacenter/splitting/compute/0": {
+      "file": "datacenter/splitting-compute-0.mp3",
+      "hash": "da4b414f51aaa38e",
+      "duration": 3.28,
+      "characters": 47,
+      "role": "host"
+    },
+    "datacenter/splitting/compute/1": {
+      "file": "datacenter/splitting-compute-1.mp3",
+      "hash": "e4a2331054fbce5e",
+      "duration": 10.24,
+      "characters": 158,
+      "role": "host"
+    },
+    "datacenter/splitting/compute/2": {
+      "file": "datacenter/splitting-compute-2.mp3",
+      "hash": "0a112db5c3a6fc9a",
+      "duration": 3.44,
+      "characters": 62,
+      "role": "host"
+    },
+    "datacenter/splitting/gather/0": {
+      "file": "datacenter/splitting-gather-0.mp3",
+      "hash": "ff571abf71951c52",
+      "duration": 2.56,
+      "characters": 36,
+      "role": "host"
+    },
+    "datacenter/splitting/gather/1": {
+      "file": "datacenter/splitting-gather-1.mp3",
+      "hash": "18569466b3c5cca5",
+      "duration": 15.52,
+      "characters": 216,
+      "role": "host"
+    },
+    "datacenter/budget/power/0": {
+      "file": "datacenter/budget-power-0.mp3",
+      "hash": "456597e43c870c0c",
+      "duration": 3.52,
+      "characters": 54,
+      "role": "host"
+    },
+    "datacenter/budget/cooling/0": {
+      "file": "datacenter/budget-cooling-0.mp3",
+      "hash": "d93aeb58cbb90dd7",
+      "duration": 3.44,
+      "characters": 57,
+      "role": "host"
+    },
+    "datacenter/budget/cooling/2": {
+      "file": "datacenter/budget-cooling-2.mp3",
+      "hash": "9826e67ae4f3da90",
+      "duration": 10.8,
+      "characters": 175,
+      "role": "host"
+    },
+    "datacenter/budget/pue/0": {
+      "file": "datacenter/budget-pue-0.mp3",
+      "hash": "ce9cde15f0cc14ca",
+      "duration": 2.08,
+      "characters": 24,
+      "role": "host"
+    },
+    "datacenter/budget/pue/1": {
+      "file": "datacenter/budget-pue-1.mp3",
+      "hash": "59a8b12355001cd2",
+      "duration": 14.64,
+      "characters": 205,
+      "role": "host"
+    },
+    "datacenter/budget/pue/2": {
+      "file": "datacenter/budget-pue-2.mp3",
+      "hash": "efa2d5a5f185e1fa",
+      "duration": 8.8,
+      "characters": 118,
+      "role": "host"
+    },
+    "extremes/nofix/nofix/0": {
+      "file": "extremes/nofix-nofix-0.mp3",
+      "hash": "c1e8f2ae39c01b0b",
+      "duration": 4.72,
+      "characters": 78,
+      "role": "host"
+    },
+    "extremes/nofix/nofix/2": {
+      "file": "extremes/nofix-nofix-2.mp3",
+      "hash": "5d9c0a75ab4b090e",
+      "duration": 9.28,
+      "characters": 169,
+      "role": "host"
+    },
+    "extremes/nofix/strike/0": {
+      "file": "extremes/nofix-strike-0.mp3",
+      "hash": "41d0a4ca4505ed04",
+      "duration": 2.64,
+      "characters": 49,
+      "role": "host"
+    },
+    "extremes/nofix/strike/2": {
+      "file": "extremes/nofix-strike-2.mp3",
+      "hash": "41dc6c4acccfce37",
+      "duration": 4.08,
+      "characters": 83,
+      "role": "host"
+    },
+    "extremes/nofix/strike/3": {
+      "file": "extremes/nofix-strike-3.mp3",
+      "hash": "48801940571befc0",
+      "duration": 11.12,
+      "characters": 200,
+      "role": "host"
+    },
+    "extremes/flips/seu/0": {
+      "file": "extremes/flips-seu-0.mp3",
+      "hash": "5213e21e90eb75cb",
+      "duration": 4.4,
+      "characters": 69,
+      "role": "host"
+    },
+    "extremes/flips/seu/1": {
+      "file": "extremes/flips-seu-1.mp3",
+      "hash": "b0a556e69aeb67a9",
+      "duration": 7.6,
+      "characters": 126,
+      "role": "host"
+    },
+    "extremes/flips/seu/2": {
+      "file": "extremes/flips-seu-2.mp3",
+      "hash": "4ccf6ee0bd13b4d0",
+      "duration": 8.16,
+      "characters": 144,
+      "role": "host"
+    },
+    "extremes/flips/seu/3": {
+      "file": "extremes/flips-seu-3.mp3",
+      "hash": "457f39fa3620bf7d",
+      "duration": 7.2,
+      "characters": 126,
+      "role": "host"
+    },
+    "extremes/flips/smaller/0": {
+      "file": "extremes/flips-smaller-0.mp3",
+      "hash": "dbea4ca84dde3529",
+      "duration": 3.44,
+      "characters": 60,
+      "role": "host"
+    },
+    "extremes/flips/hard/0": {
+      "file": "extremes/flips-hard-0.mp3",
+      "hash": "c79ea6d7e961178c",
+      "duration": 1.92,
+      "characters": 36,
+      "role": "host"
+    },
+    "extremes/voting/tmr/0": {
+      "file": "extremes/voting-tmr-0.mp3",
+      "hash": "bf9b596d20b06ed5",
+      "duration": 3.92,
+      "characters": 62,
+      "role": "host"
+    },
+    "extremes/voting/tmr/1": {
+      "file": "extremes/voting-tmr-1.mp3",
+      "hash": "4fbaf4e153485a64",
+      "duration": 9.92,
+      "characters": 158,
+      "role": "host"
+    },
+    "extremes/voting/tmr/2": {
+      "file": "extremes/voting-tmr-2.mp3",
+      "hash": "855b27a7bfb3e18f",
+      "duration": 11.52,
+      "characters": 213,
+      "role": "host"
+    },
+    "extremes/voting/tmr/3": {
+      "file": "extremes/voting-tmr-3.mp3",
+      "hash": "452a392d2af8fefc",
+      "duration": 14.4,
+      "characters": 238,
+      "role": "host"
+    },
+    "extremes/voting/voter/0": {
+      "file": "extremes/voting-voter-0.mp3",
+      "hash": "63b2dfb21db17f54",
+      "duration": 2.56,
+      "characters": 49,
+      "role": "host"
+    },
+    "extremes/voting/voter/1": {
+      "file": "extremes/voting-voter-1.mp3",
+      "hash": "c8178c4110937cc8",
+      "duration": 6.16,
+      "characters": 84,
+      "role": "host"
+    },
+    "extremes/voting/voter/2": {
+      "file": "extremes/voting-voter-2.mp3",
+      "hash": "0e76416076d71b2d",
+      "duration": 10.72,
+      "characters": 187,
+      "role": "host"
+    },
+    "extremes/voting/slow/0": {
+      "file": "extremes/voting-slow-0.mp3",
+      "hash": "827a730a80db47c5",
+      "duration": 1.36,
+      "characters": 29,
+      "role": "host"
+    },
+    "extremes/notvon/notvon/0": {
+      "file": "extremes/notvon-notvon-0.mp3",
+      "hash": "d1536c95947c0d4c",
+      "duration": 4.32,
+      "characters": 82,
+      "role": "host"
+    },
+    "extremes/notvon/notvon/1": {
+      "file": "extremes/notvon-notvon-1.mp3",
+      "hash": "35d2afa52f18cfee",
+      "duration": 16.8,
+      "characters": 226,
+      "role": "host"
+    },
+    "extremes/notvon/notvon/2": {
+      "file": "extremes/notvon-notvon-2.mp3",
+      "hash": "594a9f5d495743cf",
+      "duration": 12.8,
+      "characters": 221,
+      "role": "host"
+    },
+    "extremes/notvon/notvon/3": {
+      "file": "extremes/notvon-notvon-3.mp3",
+      "hash": "908c2fbe0f0a1b46",
+      "duration": 19.28,
+      "characters": 307,
+      "role": "host"
+    },
+    "extremes/notvon/neuro/0": {
+      "file": "extremes/notvon-neuro-0.mp3",
+      "hash": "afc89c38fb295296",
+      "duration": 2.08,
+      "characters": 40,
+      "role": "host"
+    },
+    "extremes/notvon/neuro/1": {
+      "file": "extremes/notvon-neuro-1.mp3",
+      "hash": "f2afba3a274256a0",
+      "duration": 13.52,
+      "characters": 228,
+      "role": "host"
+    },
+    "extremes/notvon/neuro/2": {
+      "file": "extremes/notvon-neuro-2.mp3",
+      "hash": "571114af9c4e7d25",
+      "duration": 10.8,
+      "characters": 178,
+      "role": "host"
+    },
+    "extremes/notvon/quantum/0": {
+      "file": "extremes/notvon-quantum-0.mp3",
+      "hash": "700c3845b6b37383",
+      "duration": 3.2,
+      "characters": 52,
+      "role": "host"
+    },
+    "extremes/notvon/quantum/1": {
+      "file": "extremes/notvon-quantum-1.mp3",
+      "hash": "b93af5bb69e1d8c2",
+      "duration": 9.68,
+      "characters": 163,
+      "role": "host"
+    },
+    "extremes/notvon/quantum/2": {
+      "file": "extremes/notvon-quantum-2.mp3",
+      "hash": "13506556c4da9191",
+      "duration": 8.72,
+      "characters": 137,
+      "role": "host"
+    },
+    "extremes/notvon/quantum/3": {
+      "file": "extremes/notvon-quantum-3.mp3",
+      "hash": "1655d90bd20aec50",
+      "duration": 12.72,
+      "characters": 227,
+      "role": "host"
+    },
+    "implant/inside/sealed/0": {
+      "file": "implant/inside-sealed-0.mp3",
+      "hash": "428025c163f28b55",
+      "duration": 11.04,
+      "characters": 149,
+      "role": "host"
+    },
+    "implant/inside/sealed/1": {
+      "file": "implant/inside-sealed-1.mp3",
+      "hash": "35b337a90b3185f6",
+      "duration": 17.12,
+      "characters": 221,
+      "role": "host"
+    },
+    "implant/inside/sealed/2": {
+      "file": "implant/inside-sealed-2.mp3",
+      "hash": "0e1610dc14349ade",
+      "duration": 15.04,
+      "characters": 231,
+      "role": "host"
+    },
+    "implant/inside/sealed/3": {
+      "file": "implant/inside-sealed-3.mp3",
+      "hash": "8f95f41660ff9f8c",
+      "duration": 10.72,
+      "characters": 155,
+      "role": "host"
+    },
+    "implant/inside/array/0": {
+      "file": "implant/inside-array-0.mp3",
+      "hash": "70fdac7de6f412aa",
+      "duration": 4,
+      "characters": 45,
+      "role": "host"
+    },
+    "implant/heat/warm/0": {
+      "file": "implant/heat-warm-0.mp3",
+      "hash": "a0de33f35a30cbd4",
+      "duration": 1.6,
+      "characters": 22,
+      "role": "host"
+    },
+    "implant/heat/budget/0": {
+      "file": "implant/heat-budget-0.mp3",
+      "hash": "452520afdd203c26",
+      "duration": 3.52,
+      "characters": 38,
+      "role": "host"
+    },
+    "implant/heat/budget/2": {
+      "file": "implant/heat-budget-2.mp3",
+      "hash": "ea059c7f98fdede7",
+      "duration": 11.28,
+      "characters": 161,
+      "role": "host"
+    },
+    "implant/heat/budget/3": {
+      "file": "implant/heat-budget-3.mp3",
+      "hash": "664eec99a729f072",
+      "duration": 26.4,
+      "characters": 298,
+      "role": "host"
+    },
+    "implant/heat/nofan/0": {
+      "file": "implant/heat-nofan-0.mp3",
+      "hash": "3ba34304f16b592e",
+      "duration": 2.48,
+      "characters": 37,
+      "role": "host"
+    },
+    "implant/heat/nofan/1": {
+      "file": "implant/heat-nofan-1.mp3",
+      "hash": "18e26b84e2f719d2",
+      "duration": 14.08,
+      "characters": 200,
+      "role": "host"
+    },
+    "implant/heat/nofan/2": {
+      "file": "implant/heat-nofan-2.mp3",
+      "hash": "f1f55363d84dbf21",
+      "duration": 14.72,
+      "characters": 223,
+      "role": "host"
+    },
+    "implant/funnel/raw/0": {
+      "file": "implant/funnel-raw-0.mp3",
+      "hash": "002636a1ce79a466",
+      "duration": 3.36,
+      "characters": 40,
+      "role": "host"
+    },
+    "implant/funnel/raw/1": {
+      "file": "implant/funnel-raw-1.mp3",
+      "hash": "5fc1051c6e4f72e3",
+      "duration": 16.72,
+      "characters": 225,
+      "role": "host"
+    },
+    "implant/funnel/raw/2": {
+      "file": "implant/funnel-raw-2.mp3",
+      "hash": "d45481c97d9c17bf",
+      "duration": 8.16,
+      "characters": 120,
+      "role": "host"
+    },
+    "implant/funnel/pipe/0": {
+      "file": "implant/funnel-pipe-0.mp3",
+      "hash": "50db40e3e350bad6",
+      "duration": 2.32,
+      "characters": 34,
+      "role": "host"
+    },
+    "implant/funnel/spikes/0": {
+      "file": "implant/funnel-spikes-0.mp3",
+      "hash": "e2f68e17a321a823",
+      "duration": 3.92,
+      "characters": 46,
+      "role": "host"
+    },
+    "implant/funnel/spikes/2": {
+      "file": "implant/funnel-spikes-2.mp3",
+      "hash": "92c0813ab1eb533f",
+      "duration": 14.24,
+      "characters": 196,
+      "role": "host"
+    },
+    "implant/funnel/spikes/3": {
+      "file": "implant/funnel-spikes-3.mp3",
+      "hash": "4939976561d1accf",
+      "duration": 13.6,
+      "characters": 192,
+      "role": "host"
+    },
+    "implant/funnel/inside/0": {
+      "file": "implant/funnel-inside-0.mp3",
+      "hash": "b4ecf9074b5cd501",
+      "duration": 3.6,
+      "characters": 54,
+      "role": "host"
+    },
+    "implant/funnel/inside/1": {
+      "file": "implant/funnel-inside-1.mp3",
+      "hash": "02aa4156e3132be4",
+      "duration": 16.16,
+      "characters": 234,
+      "role": "host"
+    },
+    "implant/funnel/inside/2": {
+      "file": "implant/funnel-inside-2.mp3",
+      "hash": "962788651dc40812",
+      "duration": 21.76,
+      "characters": 302,
+      "role": "host"
+    },
+    "implant/whole/everything/0": {
+      "file": "implant/whole-everything-0.mp3",
+      "hash": "0d97ba235a17215a",
+      "duration": 2.16,
+      "characters": 24,
+      "role": "host"
+    },
+    "implant/whole/everything/1": {
+      "file": "implant/whole-everything-1.mp3",
+      "hash": "ed327108f0e788df",
+      "duration": 22.48,
+      "characters": 259,
+      "role": "host"
+    },
+    "implant/whole/everything/2": {
+      "file": "implant/whole-everything-2.mp3",
+      "hash": "3f1ba48f6bbee52e",
+      "duration": 13.28,
+      "characters": 189,
+      "role": "host"
+    },
+    "implant/whole/everything/3": {
+      "file": "implant/whole-everything-3.mp3",
+      "hash": "f8460f0ec80b0103",
+      "duration": 15.68,
+      "characters": 242,
+      "role": "host"
+    },
+    "implant/whole/end/0": {
+      "file": "implant/whole-end-0.mp3",
+      "hash": "64366d48ee35f572",
+      "duration": 2,
+      "characters": 30,
+      "role": "host"
+    },
+    "implant/whole/end/1": {
+      "file": "implant/whole-end-1.mp3",
+      "hash": "526a37f4e479ef3d",
+      "duration": 4,
+      "characters": 63,
+      "role": "host"
+    },
+    "implant/whole/end/2": {
+      "file": "implant/whole-end-2.mp3",
+      "hash": "201d1d0ff337cdd3",
+      "duration": 20.4,
+      "characters": 258,
+      "role": "host"
+    },
+    "implant/whole/end/3": {
+      "file": "implant/whole-end-3.mp3",
+      "hash": "fb98456636081438",
+      "duration": 8.4,
+      "characters": 128,
+      "role": "host"
+    },
+    "time/pipelining/hazard/3": {
+      "file": "time/pipelining-hazard-3.mp3",
+      "hash": "d5945d5c55c1943a",
+      "duration": 8,
+      "characters": 121,
+      "role": "host"
+    },
+    "boot/firmware/firmware/3": {
+      "file": "boot/firmware-firmware-3.mp3",
+      "hash": "627228b4c905ade1",
+      "duration": 22.48,
+      "characters": 332,
+      "role": "host"
+    },
+    "boot/firmware/find/3": {
+      "file": "boot/firmware-find-3.mp3",
+      "hash": "e32f5ece5a5edffd",
+      "duration": 6.96,
+      "characters": 103,
+      "role": "host"
+    },
+    "kernel/twoworlds/wall/4": {
+      "file": "kernel/twoworlds-wall-4.mp3",
+      "hash": "402f505688404de5",
+      "duration": 14.8,
+      "characters": 252,
+      "role": "host"
+    },
+    "os/wallplace/micro/4": {
+      "file": "os/wallplace-micro-4.mp3",
+      "hash": "bae1eef952e797e7",
+      "duration": 16.32,
+      "characters": 255,
+      "role": "host"
+    },
+    "compile/running/speculation/3": {
+      "file": "compile/running-speculation-3.mp3",
+      "hash": "c5576d74f486d22e",
+      "duration": 6.32,
+      "characters": 110,
+      "role": "host"
+    },
+    "compile/physical/halfadder/3": {
+      "file": "compile/physical-halfadder-3.mp3",
+      "hash": "d956a1e45e877723",
+      "duration": 6.96,
+      "characters": 129,
+      "role": "host"
+    },
+    "compile/current/channel/3": {
+      "file": "compile/current-channel-3.mp3",
+      "hash": "142f7e4241fcde11",
+      "duration": 12.48,
+      "characters": 192,
+      "role": "host"
+    },
+    "phone/dark/dark/3": {
+      "file": "phone/dark-dark-3.mp3",
+      "hash": "291b63ad9489f52f",
+      "duration": 16.4,
+      "characters": 244,
+      "role": "host"
+    },
+    "phone/sealed/sealed/1": {
+      "file": "phone/sealed-sealed-1.mp3",
+      "hash": "4dc0f3766cb4e4a7",
+      "duration": 19.52,
+      "characters": 247,
+      "role": "host"
+    },
+    "phone/sealed/throttle/3": {
+      "file": "phone/sealed-throttle-3.mp3",
+      "hash": "093f5d41d733fe8a",
+      "duration": 13.84,
+      "characters": 218,
+      "role": "host"
+    },
+    "phone/sealed/budget/2": {
+      "file": "phone/sealed-budget-2.mp3",
+      "hash": "da2d129b3beda03f",
+      "duration": 13.28,
+      "characters": 207,
+      "role": "host"
+    },
+    "edge/given/noos/1": {
+      "file": "edge/given-noos-1.mp3",
+      "hash": "adeffeb422c7d175",
+      "duration": 15.6,
+      "characters": 251,
+      "role": "host"
+    },
+    "edge/given/noos/2": {
+      "file": "edge/given-noos-2.mp3",
+      "hash": "6a549e08ee2211df",
+      "duration": 12.08,
+      "characters": 201,
+      "role": "host"
+    },
+    "edge/given/determinism/1": {
+      "file": "edge/given-determinism-1.mp3",
+      "hash": "596d0e34f25511a1",
+      "duration": 15.76,
+      "characters": 238,
+      "role": "host"
+    },
+    "edge/given/determinism/2": {
+      "file": "edge/given-determinism-2.mp3",
+      "hash": "37fc2fb8d335c7b1",
+      "duration": 10.96,
+      "characters": 190,
+      "role": "host"
+    },
+    "car/many/harness/1": {
+      "file": "car/many-harness-1.mp3",
+      "hash": "d49eb55e94f3fd12",
+      "duration": 18.48,
+      "characters": 246,
+      "role": "host"
+    },
+    "car/onewire/bus/1": {
+      "file": "car/onewire-bus-1.mp3",
+      "hash": "b3d4088f7a1d52c6",
+      "duration": 21.12,
+      "characters": 282,
+      "role": "host"
+    },
+    "car/onewire/nondestructive/1": {
+      "file": "car/onewire-nondestructive-1.mp3",
+      "hash": "c02f67c2fa6e6fad",
+      "duration": 13.44,
+      "characters": 192,
+      "role": "host"
+    },
+    "car/onewire/nondestructive/2": {
+      "file": "car/onewire-nondestructive-2.mp3",
+      "hash": "80c6a833b2901746",
+      "duration": 18.16,
+      "characters": 274,
+      "role": "host"
+    },
+    "car/onewire/nondestructive/3": {
+      "file": "car/onewire-nondestructive-3.mp3",
+      "hash": "d2c5f985bbe0b68c",
+      "duration": 14.32,
+      "characters": 191,
+      "role": "host"
+    },
+    "car/zonal/zonal/3": {
+      "file": "car/zonal-zonal-3.mp3",
+      "hash": "dd181ac680e87543",
+      "duration": 18.88,
+      "characters": 247,
+      "role": "host"
+    },
+    "car/mustnot/lockstep/1": {
+      "file": "car/mustnot-lockstep-1.mp3",
+      "hash": "266191ee2745564f",
+      "duration": 18.48,
+      "characters": 271,
+      "role": "host"
+    },
+    "car/mustnot/asil/1": {
+      "file": "car/mustnot-asil-1.mp3",
+      "hash": "8e7dfffb4ef3ec70",
+      "duration": 16.8,
+      "characters": 227,
+      "role": "host"
+    },
+    "robot/split/split/1": {
+      "file": "robot/split-split-1.mp3",
+      "hash": "79b5822e9fc1e46e",
+      "duration": 19.36,
+      "characters": 275,
+      "role": "host"
+    },
+    "robot/late/miss/2": {
+      "file": "robot/late-miss-2.mp3",
+      "hash": "b7f5276ac02762d3",
+      "duration": 9.84,
+      "characters": 137,
+      "role": "host"
+    },
+    "robot/late/miss/3": {
+      "file": "robot/late-miss-3.mp3",
+      "hash": "4c86d962dfd08c3d",
+      "duration": 11.6,
+      "characters": 198,
+      "role": "host"
+    },
+    "robot/late/predictable/2": {
+      "file": "robot/late-predictable-2.mp3",
+      "hash": "67c5605d30057818",
+      "duration": 15.2,
+      "characters": 268,
+      "role": "host"
+    },
+    "robot/late/predictable/3": {
+      "file": "robot/late-predictable-3.mp3",
+      "hash": "bf4b2184c7ec96e7",
+      "duration": 14.64,
+      "characters": 221,
+      "role": "host"
+    },
+    "datacenter/onenode/node/1": {
+      "file": "datacenter/onenode-node-1.mp3",
+      "hash": "dd00bb07a12ce811",
+      "duration": 15.76,
+      "characters": 216,
+      "role": "host"
+    },
+    "datacenter/onenode/ecc/1": {
+      "file": "datacenter/onenode-ecc-1.mp3",
+      "hash": "b38cca76dc79572b",
+      "duration": 16.48,
+      "characters": 233,
+      "role": "host"
+    },
+    "datacenter/onenode/ecc/2": {
+      "file": "datacenter/onenode-ecc-2.mp3",
+      "hash": "b679df67b0945309",
+      "duration": 18.72,
+      "characters": 256,
+      "role": "host"
+    },
+    "datacenter/many/rack/2": {
+      "file": "datacenter/many-rack-2.mp3",
+      "hash": "d8013e355be9036a",
+      "duration": 21.44,
+      "characters": 333,
+      "role": "host"
+    },
+    "datacenter/splitting/gather/2": {
+      "file": "datacenter/splitting-gather-2.mp3",
+      "hash": "f31f88712d275948",
+      "duration": 17.44,
+      "characters": 260,
+      "role": "host"
+    },
+    "datacenter/splitting/gather/3": {
+      "file": "datacenter/splitting-gather-3.mp3",
+      "hash": "4ad897b16b166214",
+      "duration": 18.48,
+      "characters": 266,
+      "role": "host"
+    },
+    "datacenter/budget/power/1": {
+      "file": "datacenter/budget-power-1.mp3",
+      "hash": "7b4d240d0e33bdc6",
+      "duration": 16.8,
+      "characters": 236,
+      "role": "host"
+    },
+    "datacenter/budget/power/2": {
+      "file": "datacenter/budget-power-2.mp3",
+      "hash": "ead27c530ef1e6c6",
+      "duration": 7.28,
+      "characters": 104,
+      "role": "host"
+    },
+    "datacenter/budget/power/3": {
+      "file": "datacenter/budget-power-3.mp3",
+      "hash": "389f888944f743b2",
+      "duration": 7.44,
+      "characters": 109,
+      "role": "host"
+    },
+    "datacenter/budget/cooling/1": {
+      "file": "datacenter/budget-cooling-1.mp3",
+      "hash": "1207935c572d9656",
+      "duration": 14.96,
+      "characters": 193,
+      "role": "host"
+    },
+    "datacenter/budget/pue/3": {
+      "file": "datacenter/budget-pue-3.mp3",
+      "hash": "8393fa649929ae15",
+      "duration": 19.76,
+      "characters": 310,
+      "role": "host"
+    },
+    "extremes/nofix/nofix/1": {
+      "file": "extremes/nofix-nofix-1.mp3",
+      "hash": "1e0b05a43f3376a2",
+      "duration": 20.48,
+      "characters": 332,
+      "role": "host"
+    },
+    "extremes/nofix/nofix/3": {
+      "file": "extremes/nofix-nofix-3.mp3",
+      "hash": "6c3e7e2b32f02eb9",
+      "duration": 10.56,
+      "characters": 184,
+      "role": "host"
+    },
+    "extremes/nofix/strike/1": {
+      "file": "extremes/nofix-strike-1.mp3",
+      "hash": "4e5c351fe0354553",
+      "duration": 11.2,
+      "characters": 175,
+      "role": "host"
+    },
+    "extremes/flips/smaller/1": {
+      "file": "extremes/flips-smaller-1.mp3",
+      "hash": "f3392db10f82cb14",
+      "duration": 17.6,
+      "characters": 285,
+      "role": "host"
+    },
+    "extremes/flips/smaller/2": {
+      "file": "extremes/flips-smaller-2.mp3",
+      "hash": "c004ef5f8b1d553b",
+      "duration": 18.4,
+      "characters": 311,
+      "role": "host"
+    },
+    "extremes/flips/smaller/3": {
+      "file": "extremes/flips-smaller-3.mp3",
+      "hash": "af11163061ab396a",
+      "duration": 15.76,
+      "characters": 262,
+      "role": "host"
+    },
+    "extremes/flips/hard/1": {
+      "file": "extremes/flips-hard-1.mp3",
+      "hash": "8b372cb2b662b9dc",
+      "duration": 8.48,
+      "characters": 125,
+      "role": "host"
+    },
+    "extremes/flips/hard/2": {
+      "file": "extremes/flips-hard-2.mp3",
+      "hash": "4e3f0ab35e7ea169",
+      "duration": 10.8,
+      "characters": 193,
+      "role": "host"
+    },
+    "extremes/flips/hard/3": {
+      "file": "extremes/flips-hard-3.mp3",
+      "hash": "bb56b09cd4949ab3",
+      "duration": 12.64,
+      "characters": 214,
+      "role": "host"
+    },
+    "extremes/voting/voter/3": {
+      "file": "extremes/voting-voter-3.mp3",
+      "hash": "78838408e16423fd",
+      "duration": 22.88,
+      "characters": 365,
+      "role": "host"
+    },
+    "extremes/voting/slow/1": {
+      "file": "extremes/voting-slow-1.mp3",
+      "hash": "82b22628b2380fc0",
+      "duration": 12.16,
+      "characters": 166,
+      "role": "host"
+    },
+    "extremes/voting/slow/2": {
+      "file": "extremes/voting-slow-2.mp3",
+      "hash": "260226f99bcc2f7b",
+      "duration": 20.16,
+      "characters": 322,
+      "role": "host"
+    },
+    "extremes/voting/slow/3": {
+      "file": "extremes/voting-slow-3.mp3",
+      "hash": "2902db9d201b35b7",
+      "duration": 4.08,
+      "characters": 74,
+      "role": "host"
+    },
+    "extremes/voting/slow/4": {
+      "file": "extremes/voting-slow-4.mp3",
+      "hash": "9b0c18641bd8453d",
+      "duration": 18,
+      "characters": 322,
+      "role": "host"
+    },
+    "extremes/notvon/neuro/3": {
+      "file": "extremes/notvon-neuro-3.mp3",
+      "hash": "31d33aae2fe7898c",
+      "duration": 29.76,
+      "characters": 463,
+      "role": "host"
+    },
+    "extremes/notvon/quantum/4": {
+      "file": "extremes/notvon-quantum-4.mp3",
+      "hash": "da82d4c327c111d8",
+      "duration": 24.08,
+      "characters": 400,
+      "role": "host"
+    },
+    "implant/inside/array/1": {
+      "file": "implant/inside-array-1.mp3",
+      "hash": "182c75756c045c82",
+      "duration": 17.84,
+      "characters": 264,
+      "role": "host"
+    },
+    "implant/inside/array/2": {
+      "file": "implant/inside-array-2.mp3",
+      "hash": "a25b861edd964e10",
+      "duration": 13.76,
+      "characters": 205,
+      "role": "host"
+    },
+    "implant/inside/array/3": {
+      "file": "implant/inside-array-3.mp3",
+      "hash": "4d3d195d40518d3e",
+      "duration": 7.12,
+      "characters": 102,
+      "role": "host"
+    },
+    "implant/heat/warm/1": {
+      "file": "implant/heat-warm-1.mp3",
+      "hash": "a7bb2972f01bb947",
+      "duration": 25.52,
+      "characters": 342,
+      "role": "host"
+    },
+    "implant/heat/warm/2": {
+      "file": "implant/heat-warm-2.mp3",
+      "hash": "09685148b140f310",
+      "duration": 15.6,
+      "characters": 215,
+      "role": "host"
+    },
+    "implant/heat/warm/3": {
+      "file": "implant/heat-warm-3.mp3",
+      "hash": "2ee8370d43aa495f",
+      "duration": 15.28,
+      "characters": 236,
+      "role": "host"
+    },
+    "implant/heat/budget/1": {
+      "file": "implant/heat-budget-1.mp3",
+      "hash": "80861e89ac79ec3b",
+      "duration": 12.16,
+      "characters": 174,
+      "role": "host"
+    },
+    "implant/funnel/pipe/1": {
+      "file": "implant/funnel-pipe-1.mp3",
+      "hash": "07981c07c9daa839",
+      "duration": 14.08,
+      "characters": 199,
+      "role": "host"
+    },
+    "implant/funnel/pipe/2": {
+      "file": "implant/funnel-pipe-2.mp3",
+      "hash": "557b81ee419b4d9d",
+      "duration": 7.04,
+      "characters": 120,
+      "role": "host"
+    },
+    "implant/funnel/pipe/3": {
+      "file": "implant/funnel-pipe-3.mp3",
+      "hash": "98d3b93751c94ca9",
+      "duration": 12.8,
+      "characters": 186,
+      "role": "host"
+    },
+    "implant/funnel/spikes/1": {
+      "file": "implant/funnel-spikes-1.mp3",
+      "hash": "f329940b5f00ca6e",
+      "duration": 26.16,
+      "characters": 330,
+      "role": "host"
+    }
+  },
+  "generated": "2026-09-23T16:24:30.850Z",
+  "cast": {
+    "1": {
+      "narrator": "Lily",
+      "id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    "2": {
+      "narrator": "Bella",
+      "id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    "3": {
+      "narrator": "Alice",
+      "id": "Xb7hH8MSUJpSbSDYk0k2"
+    },
+    "4": {
+      "narrator": "Matilda",
+      "id": "XrExE9yKIg1WjnnlVkGX"
+    },
+    "5": {
+      "narrator": "Lily",
+      "id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    "6": {
+      "narrator": "Bella",
+      "id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    "7": {
+      "narrator": "Alice",
+      "id": "Xb7hH8MSUJpSbSDYk0k2"
+    },
+    "8": {
+      "narrator": "Matilda",
+      "id": "XrExE9yKIg1WjnnlVkGX"
+    },
+    "9": {
+      "narrator": "Lily",
+      "id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    "10": {
+      "narrator": "Bella",
+      "id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    "11": {
+      "narrator": "Alice",
+      "id": "Xb7hH8MSUJpSbSDYk0k2"
+    },
+    "12": {
+      "narrator": "Matilda",
+      "id": "XrExE9yKIg1WjnnlVkGX"
+    },
+    "13": {
+      "narrator": "Lily",
+      "id": "pFZP5JQG7iQjIQuC4Bku"
+    },
+    "14": {
+      "narrator": "Bella",
+      "id": "hpp4J3VqNfWAUOO0d1Us"
+    },
+    "15": {
+      "narrator": "Alice",
+      "id": "Xb7hH8MSUJpSbSDYk0k2"
+    },
+    "16": {
+      "narrator": "Matilda",
+      "id": "XrExE9yKIg1WjnnlVkGX"
+    },
+    "17": {
+      "narrator": "Lily",
+      "id": "pFZP5JQG7iQjIQuC4Bku"
+    }
+  }
+}

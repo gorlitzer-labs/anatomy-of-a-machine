@@ -1,0 +1,54 @@
+# Cache policy for the static build.
+#
+# The default for static assets is `public, max-age=0, must-revalidate`, which
+# is the right answer for index.html and the wrong one for every file whose
+# name already encodes its contents.
+
+# Vite emits content-hashed filenames here, so these are safe to pin.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Names that never change and contents that occasionally do — hero.png is the
+# og:image and the hub's banner fallback, so it revalidates daily.
+/hero.png
+  Cache-Control: public, max-age=86400
+/favicon.svg
+  Cache-Control: public, max-age=86400
+/icons.svg
+  Cache-Control: public, max-age=86400
+
+# 600-odd files pulled in bursts while a lecture plays. A day of cache spares
+# the reader a revalidation round-trip per spoken line; a re-render lands the
+# next day, and a line that misses only falls back to speechSynthesis.
+#
+# Matched by extension so that `manifest.json`, which sits in the same tree and
+# decides which lines have audio at all, keeps the default revalidating policy
+# and notices a re-render immediately. It has to be excluded by the pattern
+# rather than corrected by a narrower rule below: matching rules concatenate
+# instead of overriding, so `/narration/*` followed by a manifest rule emits
+# both values and the browser reads the first one.
+/narration/*.mp3
+  Cache-Control: public, max-age=86400
+
+# Security headers for every response. Rules for different header names
+# combine, so these sit alongside the cache rules above.
+#
+# The CSP allows exactly what the page loads: its own files, Google Fonts,
+# blob:/data: URLs that three.js uses for generated textures, and Cloudflare Web
+# Analytics, whose beacon the edge injects in production only (so wrangler dev
+# never shows it), and https://useful-shit.org/bar.js, the hub's strip at the top. Inline styles stay allowed because React and drei set them.
+#
+# The hub's bar.js now also carries a GA4 consent banner (every product
+# inherits it for free by already loading the bar) — these origins are what
+# GA4's gtag.js needs once a visitor accepts. Wildcards, not bare hosts: GA4
+# fans out to regional collection subdomains (e.g. region1.google-analytics.com)
+# and a bare www.google-analytics.com silently drops that traffic. Nothing
+# Google-owned loads at all until consent is given, so this is dormant until
+# then regardless of being allowlisted.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com https://useful-shit.org https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self' blob:; connect-src 'self' blob: data: https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000

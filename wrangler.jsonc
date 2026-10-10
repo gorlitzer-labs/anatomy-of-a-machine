@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "anatomy",
+  "compatibility_date": "2026-09-22",
+
+  // A tiny script answers /api/* only (reader analytics, worker/index.ts). Everything else is
+  // served straight from the assets — run_worker_first limits the script to /api/*, so asset
+  // requests stay unbilled and never touch the Worker.
+  "main": "worker/index.ts",
+  "assets": {
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
+    "directory": "./dist",
+    // The deck routes on the hash, but a deep link still has to boot index.html
+    // rather than 404 — this is the old `try_files $uri $uri/ /index.html`.
+    "not_found_handling": "single-page-application"
+  },
+
+  // A custom domain: a specific DNS record, which wins over the zone's
+  // *.useful-shit.org wildcard (deleting the record takes the site down).
+  "routes": [{ "pattern": "anatomy.useful-shit.org", "custom_domain": true }],
+
+  // Reader events (see docs/ANALYTICS.md). The dataset is created on first write.
+  "analytics_engine_datasets": [{ "binding": "EVENTS", "dataset": "anatomy_events" }]
+}

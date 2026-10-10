@@ -1,0 +1,49 @@
+name: Deploy anatomy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'index.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'wrangler.jsonc'
+      - '*.config.*'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Typecheck runs as part of `build` (tsc -b && vite build), so a type
+      # error fails the deploy before anything is uploaded.
+      - name: Test
+        # The analytics endpoint is public; its validator must hold before it ships.
+        run: npm test
+      - name: Build
+        run: npm run build
+
+      # Assets-only deploy: wrangler uploads dist/ and serves it from the edge.
+      # It hashes each file and skips the ones Cloudflare already holds, so the
+      # 49 MB of narration is a first-deploy cost, not a per-deploy one.
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
