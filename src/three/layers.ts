@@ -6,11 +6,10 @@ import type { SceneId } from '../content/types'
 /**
  * Which scene layer a component is inside, and how much of it is on screen.
  *
- * Every scene in the course is mounted at once — twenty of them — so by default
- * every frame loop in the whole course runs on every frame, whichever chapter
- * the reader is actually looking at. Sixteen of the twenty are doing instanced
- * matrix writes, lane resampling and packet integration for a chapter nobody
- * can see.
+ * Every scene the current lecture uses stays mounted (five, for lecture 1), so
+ * by default every one of their frame loops runs on every frame, whichever
+ * chapter the reader is actually looking at — instanced matrix writes, lane
+ * resampling and packet integration for chapters nobody can see.
  */
 export const SceneIdContext = createContext<SceneId | null>(null)
 

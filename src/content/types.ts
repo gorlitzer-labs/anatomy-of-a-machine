@@ -164,8 +164,7 @@ export type Beat = {
    * costs one sentence.
    *
    * A beat with no `say` is silent, and the player holds it for a dwell
-   * proportional to its written length rather than skipping past it. That is
-   * the state every lecture except the first is in.
+   * proportional to its written length rather than skipping past it.
    */
   say?: Say[]
 }

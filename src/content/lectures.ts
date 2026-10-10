@@ -20,10 +20,10 @@ import { implantChapters } from './implant'
 /**
  * The course.
  *
- * Lecture 1 is written; the rest are the curriculum map (`docs/CURRICULUM.md`)
- * expressed as data so the syllabus screen can show the whole shape of the
- * course rather than only the part that happens to be finished. A planned
- * lecture carries no chapters and renders as unavailable.
+ * The curriculum map (`docs/CURRICULUM.md`) expressed as data, so the syllabus
+ * screen shows the whole shape of the course. A planned lecture carries
+ * `state: 'soon'` and no chapters, and renders as unavailable; today all
+ * seventeen are live.
  *
  * `constraint` is the spine: every lecture names what dominated its design and
  * what was traded away for it. A lecture that cannot state its trade is not
