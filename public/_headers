@@ -9,7 +9,7 @@
   Cache-Control: public, max-age=31536000, immutable
 
 # Names that never change and contents that occasionally do — hero.png is the
-# og:image and the hub's banner fallback, so it revalidates daily.
+# og:image, so it revalidates daily.
 /hero.png
   Cache-Control: public, max-age=86400
 /favicon.svg
@@ -36,17 +36,9 @@
 # The CSP allows exactly what the page loads: its own files, Google Fonts,
 # blob:/data: URLs that three.js uses for generated textures, and Cloudflare Web
 # Analytics, whose beacon the edge injects in production only (so wrangler dev
-# never shows it), and https://useful-shit.org/bar.js, the hub's strip at the top. Inline styles stay allowed because React and drei set them.
-#
-# The hub's bar.js now also carries a GA4 consent banner (every product
-# inherits it for free by already loading the bar) — these origins are what
-# GA4's gtag.js needs once a visitor accepts. Wildcards, not bare hosts: GA4
-# fans out to regional collection subdomains (e.g. region1.google-analytics.com)
-# and a bare www.google-analytics.com silently drops that traffic. Nothing
-# Google-owned loads at all until consent is given, so this is dormant until
-# then regardless of being allowlisted.
+# never shows it). Inline styles stay allowed because React and drei set them.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com https://useful-shit.org https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self' blob:; connect-src 'self' blob: data: https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' blob: data: https://cloudflareinsights.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
